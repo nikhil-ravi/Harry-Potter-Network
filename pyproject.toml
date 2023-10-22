@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "hp-nlp-graph"
+version = "0.1.0"
+description = ""
+authors = ["Nikhil Ravi <nr337@cornell.edu>"]
+readme = "README.md"
+packages = [{include = "hp_nlp_graph"}]
+
+[tool.poetry.dependencies]
+python = "3.11.5"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+spacy-experimental = "^0.6.3"
+fastcoref = "^2.1.6"
+spacy = "3.4.4"
+neo4j = "^5.13.0"
+python-dotenv = "^1.0.0"
+en-core-web-sm = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.1/en_core_web_sm-3.4.1-py3-none-any.whl"}
+# en_coreference_web_trf = {url = "https://github.com/explosion/spacy-experimental/releases/download/v0.6.1/en_coreference_web_trf-3.4.0a2-py3-none-any.whl"}
+networkx = "^3.2"
+jupyter = "^1.0.0"
+ipywidgets = "^8.1.1"
+matplotlib = "^3.8.0"
+cdlib = "^0.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+black = "^23.10.0"
+isort = "^5.12.0"
+
+
+[tool.poetry.group.optional.dependencies]
+pandas = "^2.1.1"
+
+
+[tool.poetry.group.extras.dependencies]
+pandas = "^2.1.1"
+
+
+[tool.poetry.group.cdlib_extras.dependencies]
+leidenalg = "^0.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
