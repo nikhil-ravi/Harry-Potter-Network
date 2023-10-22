@@ -44,8 +44,8 @@ To get started with this project, follow these steps:
 
 Provide a detailed guide on how to use your project. Include code examples and explanations for various use cases.
 
-```bash
+<!-- ```bash
 $ python data_collection.py
 $ python coreference_resolution.py
 $ python network_construction.py
-```
+``` -->
