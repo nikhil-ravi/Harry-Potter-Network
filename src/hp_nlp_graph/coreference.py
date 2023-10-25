@@ -7,7 +7,7 @@ from spacy.language import Language
 from spacy.matcher import Matcher
 from spacy.tokens import Doc
 
-from .reference import get_matcher_patterns
+from .language import get_matcher_patterns
 from .scraper import Character
 
 
@@ -30,7 +30,7 @@ class MatchResult:
 
 
 hardcoded_options = dict()
-hardcoded_options["Malfoy"] = ["Draco Malfoy"]
+# hardcoded_options["Malfoy"] = ["Draco Malfoy"]
 hardcoded_options["Patil"] = ["Padma Patil", "Parvati Patil"]
 hardcoded_options["Tom"] = ["Tom"]
 

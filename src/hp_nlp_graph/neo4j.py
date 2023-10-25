@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 def add_characters_to_neo4j(driver: Driver, chapter_characters: list[dict]) -> None:
     """Add characters to the graph database.
-    
+
     Args:
         driver (Driver): Neo4j driver
         chapter_characters (list[dict]): List of characters for each chapter

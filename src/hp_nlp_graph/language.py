@@ -82,6 +82,7 @@ class SpacyCoref:
         nlp (Language): Spacy Language object with coref and span_resolver
         head_only_clusters (str, optional): Whether to use only the head of the coreference clusters. Defaults to False.
     """
+
     def __init__(
         self, base_nlp: Language, nlp: Language, head_only_clusters: bool = False
     ):
@@ -136,6 +137,7 @@ class FastCoref:
         base_nlp (Language): Spacy Language object without coref and span_resolver
         nlp (Language): Spacy Language object with coref and span_resolver
     """
+
     def __init__(self, base_nlp: Language, nlp: Language):
         self.nlp = nlp
         self.base_nlp = base_nlp
@@ -161,6 +163,7 @@ class EntityRulePattern:
         label (str): Label of the Entity
         pattern (str): Pattern to match
     """
+
     label: str
     pattern: str
 
@@ -181,7 +184,7 @@ def get_entity_ruler_patterns(character: Character) -> list[EntityRulePattern]:
 
     Args:
         character: The character to get patterns for
-    
+
     Returns:
         list: List of entity ruler patterns
     """
@@ -298,6 +301,21 @@ def get_matcher_patterns(character: Character) -> list:
                 {"LOWER": "know", "IS_TITLE": True},
                 {"LOWER": "-"},
                 {"LOWER": "who", "IS_TITLE": True},
+            ]
+        )
+        matcher_patterns.append(
+            [
+                {"LOWER": "he", "IS_TITLE": True},
+                {"LOWER": "-"},
+                {"LOWER": "who", "IS_TITLE": True},
+                {"LOWER": "-"},
+                {"LOWER": "must", "IS_TITLE": True},
+                {"LOWER": "-"},
+                {"LOWER": "not", "IS_TITLE": True},
+                {"LOWER": "-"},
+                {"LOWER": "be", "IS_TITLE": True},
+                {"LOWER": "-"},
+                {"LOWER": "named", "IS_TITLE": True},
             ]
         )
     return matcher_patterns
