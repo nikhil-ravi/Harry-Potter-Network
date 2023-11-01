@@ -9,9 +9,15 @@ NUMBER_OF_IMPORTANT_CHARACTERS = 7
 
 
 class BookGraph:
-    def __init__(self, book_number: int, interactions_by_chapter_path: str) -> None:
+    def __init__(
+        self,
+        book_number: int,
+        interactions_by_chapter_path: str,
+        number_of_important_characters: int = NUMBER_OF_IMPORTANT_CHARACTERS,
+    ) -> None:
         self.book_number = book_number
         self.interactions_path = interactions_by_chapter_path
+        self.number_of_important_characters = number_of_important_characters
         interactions_by_chapter = self._load_interactions()
         self.number_of_chapters = len(interactions_by_chapter)
         self.chapter_numbers = list(range(1, self.number_of_chapters + 1))
@@ -78,7 +84,7 @@ class BookGraph:
             set(
                 self.metrics_dfs["book"]
                 .weighted_degree.sort_values(ascending=False)
-                .head(NUMBER_OF_IMPORTANT_CHARACTERS)
+                .head(self.number_of_important_characters)
                 .index
             )
         )
@@ -197,6 +203,11 @@ def plt_centrality_diagram(
 
 def get_graph_metrics(G: nx.Graph) -> pd.DataFrame:
     hub_centrality, authority_centrality = nx.hits(G)
+    louvain = dict(algorithms.louvain(G, weight="weight").to_node_community_map())
+    try:
+        leiden = dict(algorithms.leiden(G, weights="weight").to_node_community_map())
+    except:
+        leiden = louvain
     metrics = {
         "eigen_centrality": nx.eigenvector_centrality(
             G, weight="weight", max_iter=1000
@@ -209,8 +220,8 @@ def get_graph_metrics(G: nx.Graph) -> pd.DataFrame:
         "authority": authority_centrality,
         "degree": dict(nx.degree(G)),
         "weighted_degree": dict(nx.degree(G, weight="weight")),
-        "louvain": dict(algorithms.louvain(G, weight="weight").to_node_community_map()),
-        "leiden": dict(algorithms.leiden(G, weights="weight").to_node_community_map()),
+        "louvain": louvain,
+        "leiden": leiden,
     }
     metrics_df = pd.DataFrame.from_dict(metrics).explode("louvain").explode("leiden")
     metrics_df.index.name = "name"

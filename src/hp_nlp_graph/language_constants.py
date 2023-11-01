@@ -78,4 +78,6 @@ SHORT_FORMS = {
     "Charles": "charlie",
     "Percy": "perce",
     "Ginevra": "ginny",
+    "Ludovic": "ludo",
+    "Bartemius": "barty",
 }

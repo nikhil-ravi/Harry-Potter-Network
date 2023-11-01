@@ -37,8 +37,20 @@ hardcoded_options["Hufflepuff"] = ["Helga Hufflepuff"]
 hardcoded_options["Slytherin"] = ["Salazar Slytherin"]
 hardcoded_options["Gryffindor"] = ["Godric Gryffindor"]
 hardcoded_options["Riddle"] = ["Tom Riddle"]
+# Book 3
 hardcoded_options["Lily"] = ["Lily J. Potter"]
 hardcoded_options["Lupin"] = ["Remus Lupin"]
+# Book 4
+hardcoded_options["Bagman"] = ["Ludovic Bagman"]
+hardcoded_options["Dennis"] = ["Dennis Creevey"]
+hardcoded_options["Crouch"] = ["Bartemius Crouch Senior"]
+hardcoded_options["Barty"] = ["Bartemius Crouch Senior"]
+hardcoded_options["Bartemius"] = ["Bartemius Crouch Senior"]
+hardcoded_options["Longbottom"] = ["Neville Longbottom"]
+hardcoded_options["Dumbledore"] = ["Albus Dumbledore"]
+hardcoded_options["Crabbe"] = ["Vincent Crabbe"]
+hardcoded_options["Goyle"] = ["Gregory Goyle"]
+hardcoded_options["Nott"] = ["Theodore Nott"]
 
 
 def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchResult]:
@@ -57,6 +69,7 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
     for index, multiple_options in needs_deduplication:
         # Special logic for Dursleys, if there if Mr. then Vernon, if Mrs. then Petunia
         prefix = doc[multiple_options.start - 3 : multiple_options.start]
+        suffix = doc[multiple_options.end : multiple_options.end + 3]
         if (multiple_options.span == "Dursley") and (
             ("Mr. and Mrs." in prefix.text) or ("Mrs. and Mr." in prefix.text)
         ):
@@ -79,6 +92,10 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
             not ("Mr." in prefix.text) or ("Mrs." in prefix.text)
         ):
             resolution = ["Draco Malfoy"]
+        elif (multiple_options.span == "Diggory") and ("Mr." in prefix.text):
+            resolution = ["Amos Diggory"]
+        elif (multiple_options.span == "Creevey") and ("brothers" in suffix.text):
+            resolution = ["Colin Creevey", "Dennis Creevey"]
         # Find nearest entity
         else:
             end_char = multiple_options.end
