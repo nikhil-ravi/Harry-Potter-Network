@@ -37,6 +37,8 @@ hardcoded_options["Hufflepuff"] = ["Helga Hufflepuff"]
 hardcoded_options["Slytherin"] = ["Salazar Slytherin"]
 hardcoded_options["Gryffindor"] = ["Godric Gryffindor"]
 hardcoded_options["Riddle"] = ["Tom Riddle"]
+hardcoded_options["Lily"] = ["Lily J. Potter"]
+hardcoded_options["Lupin"] = ["Remus Lupin"]
 
 
 def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchResult]:
