@@ -71,9 +71,19 @@ hardcoded_options["Arnold"] = ["Arnold"]
 hardcoded_options["Tiberius"] = ["Tiberius Ogden"]
 hardcoded_options["Urquhart"] = ["Urquhart"]
 hardcoded_options["Rosier"] = ["Rosier"]
+# Book 7
+hardcoded_options["Bletchley"] = ["Bletchley"]
+hardcoded_options["Cattermole"] = ["Reginald Cattermole"]
+hardcoded_options["Dudley"] = ["Dudley Dursley"]
+hardcoded_options["Gamp"] = ["Gamp"]
+hardcoded_options["Creevey"] = ["Colin Creevey"]
 
 
-def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchResult]:
+def handle_multiple_options(
+    results: list[MatchResult],
+    doc: Doc,
+    chapter_hardcoded_options: dict[str, list[str]] = None,
+) -> list[MatchResult]:
     """Handle multiple options for a single entity. This is done by finding the nearest entity and using that one.
 
     Args:
@@ -83,6 +93,13 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
     Returns:
         list[MatchResult]: List of matched results with disambiguated entities
     """
+    if chapter_hardcoded_options is None:
+        chapter_hardcoded_options = hardcoded_options
+    else:
+        for key, value in hardcoded_options.items():
+            if key in chapter_hardcoded_options:
+                continue
+            chapter_hardcoded_options[key] = value
     needs_deduplication = [
         (i, result) for i, result in enumerate(results) if len(result.string_id) > 1
     ]
@@ -104,6 +121,8 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
             ("Mr. and Mrs." in prefix.text) or ("Mrs. and Mr." in prefix.text)
         ):
             resolution = ["Arthur Weasley", "Molly Weasley"]
+        elif (multiple_options.span == "Weasley") and ("Mr." in prefix.text):
+            resolution = ["Arthur Weasley"]
         elif (multiple_options.span == "Weasley") and ("Mrs." in prefix.text):
             resolution = ["Molly Weasley"]
         elif (multiple_options.span == "Malfoy") and ("Mrs." in prefix.text):
@@ -118,6 +137,10 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
             resolution = ["Amos Diggory"]
         elif (multiple_options.span == "Creevey") and ("brothers" in suffix.text):
             resolution = ["Colin Creevey", "Dennis Creevey"]
+        elif (multiple_options.span == "Cattermole") and ("Mrs." in prefix.text):
+            resolution = ["Mary Cattermole"]
+        elif (multiple_options.span == "Cattermole") and ("Mr." in prefix.text):
+            resolution = ["Reginald Cattermole"]
         # Find nearest entity
         else:
             end_char = multiple_options.end
@@ -138,7 +161,7 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
                 if multiple_options.span == "Senior":
                     continue
                 try:
-                    ho = hardcoded_options[multiple_options.span]
+                    ho = chapter_hardcoded_options[multiple_options.span]
                     if len(ho) == 1:
                         resolution = ho
                     else:
@@ -158,6 +181,7 @@ def coref_resolve_and_get_characters_matches_in_chapter(
     chapter_text: str,
     characters_seen_till_this_chapter: list[Character],
     coref_resolver: callable,
+    chapter_hardcoded_options: dict[str, list[str]],
 ) -> tuple[list[MatchResult], Doc]:
     """Resolve coreferences and get matches for the given characters in the chapter.
 
@@ -245,7 +269,7 @@ def coref_resolve_and_get_characters_matches_in_chapter(
             i = same.index(True)
             match_results[i].add_string_id(string_id)
 
-    handle_multiple_options(match_results, resolved_doc)
+    handle_multiple_options(match_results, resolved_doc, chapter_hardcoded_options)
     return match_results, resolved_doc
 
 

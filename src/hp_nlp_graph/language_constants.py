@@ -82,4 +82,15 @@ SHORT_FORMS = {
     "Ginevra": "ginny",
     "Ludovic": "ludo",
     "Bartemius": "barty",
+    "Reginald": "reg",
+}
+
+
+# {book-chapter: {span: [hardcoded_options]}}
+CHAPTER_HARDCODED_OPTIONS = {
+    "7-37": {
+        "James": ["James Potter II"],
+        "Albus": ["Albus Potter"],
+        "Rose": ["Rose Granger-Weasley"],
+    }
 }
