@@ -65,6 +65,12 @@ hardcoded_options["Avery"] = ["Avery (Marauder-era)"]
 hardcoded_options["Mulciber"] = ["Mulciber (Marauder-era)"]
 hardcoded_options["Delacour"] = ["Fleur Delacour"]
 hardcoded_options["Cornelius"] = ["Cornelius Fudge"]
+# Book 6
+hardcoded_options["Black"] = ["Sirius Black"]
+hardcoded_options["Arnold"] = ["Arnold"]
+hardcoded_options["Tiberius"] = ["Tiberius Ogden"]
+hardcoded_options["Urquhart"] = ["Urquhart"]
+hardcoded_options["Rosier"] = ["Rosier"]
 
 
 def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchResult]:
@@ -176,8 +182,8 @@ def coref_resolve_and_get_characters_matches_in_chapter(
     text = " ".join(lines[1:])
     base_doc = base_nlp(text)
     resolved_doc = list()
-    for i in range(0, len(base_doc), 2000):
-        tmp = coref_resolver(base_doc[i : i + 2000].text)
+    for i in range(0, len(base_doc), 2100):
+        tmp = coref_resolver(base_doc[i : i + 2100].text)
         resolved_doc.append(tmp)
     resolved_doc = Doc.from_docs(resolved_doc)
     # resolved_doc = coref_resolver(text)
