@@ -4,7 +4,7 @@ from neo4j import Driver
 from tqdm import tqdm
 
 
-def add_characters_to_neo4j(driver: Driver, chapter_characters: list[dict]) -> None:
+def add_characters_to_neo4j(driver: Driver, characters: list[dict]) -> None:
     """Add characters to the graph database.
 
     Args:
@@ -26,11 +26,10 @@ def add_characters_to_neo4j(driver: Driver, chapter_characters: list[dict]) -> N
     """
 
     with driver.session() as session:
-        for chapter in tqdm(chapter_characters):
-            session.run(
-                entity_query,
-                data=[character.__dict__ for character in chapter.characters],
-            )
+        session.run(
+            entity_query,
+            data=characters,
+        )
 
 
 def add_interactions_to_neo4j(driver: Driver, interactions: Counter) -> None:

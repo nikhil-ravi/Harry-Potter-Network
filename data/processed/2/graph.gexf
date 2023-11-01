@@ -1,0 +1,2193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2023-11-01">
+    <creator>NetworkX 3.2</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="eigen_centrality" type="double" />
+      <attribute id="1" title="betweenness_centrality" type="double" />
+      <attribute id="2" title="degree_centrality" type="double" />
+      <attribute id="3" title="closeness_centrality" type="double" />
+      <attribute id="4" title="pagerank" type="double" />
+      <attribute id="5" title="hub" type="double" />
+      <attribute id="6" title="authority" type="double" />
+      <attribute id="7" title="degree" type="long" />
+      <attribute id="8" title="weighted_degree" type="long" />
+      <attribute id="9" title="louvain" type="long" />
+      <attribute id="10" title="leiden" type="long" />
+      <attribute id="11" title="girvan_newman" type="long" />
+      <attribute id="12" title="spectral" type="long" />
+    </attributes>
+    <nodes>
+      <node id="Harry Potter" label="Harry Potter">
+        <attvalues>
+          <attvalue for="0" value="0.6386117415173423" />
+          <attvalue for="1" value="0.19256251949091693" />
+          <attvalue for="2" value="0.7999999999999999" />
+          <attvalue for="3" value="0.8223435948361469" />
+          <attvalue for="4" value="0.23310143390847665" />
+          <attvalue for="5" value="0.19999756581519204" />
+          <attvalue for="6" value="0.19999756581519196" />
+          <attvalue for="7" value="76" />
+          <attvalue for="8" value="4925" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Ronald Weasley" label="Ronald Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.58804813545138" />
+          <attvalue for="1" value="0.09887960729442294" />
+          <attvalue for="2" value="0.6105263157894737" />
+          <attvalue for="3" value="0.6973473684210526" />
+          <attvalue for="4" value="0.13153788208532805" />
+          <attvalue for="5" value="0.18416760362987988" />
+          <attvalue for="6" value="0.1841676036298802" />
+          <attvalue for="7" value="58" />
+          <attvalue for="8" value="2926" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Hermione Granger" label="Hermione Granger">
+        <attvalues>
+          <attvalue for="0" value="0.38189558198662305" />
+          <attvalue for="1" value="0.04492714079500195" />
+          <attvalue for="2" value="0.4842105263157895" />
+          <attvalue for="3" value="0.6316552250190695" />
+          <attvalue for="4" value="0.06966961466244" />
+          <attvalue for="5" value="0.11960248041701431" />
+          <attvalue for="6" value="0.11960248041701425" />
+          <attvalue for="7" value="46" />
+          <attvalue for="8" value="1556" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Gilderoy Lockhart" label="Gilderoy Lockhart">
+        <attvalues>
+          <attvalue for="0" value="0.16542699020009202" />
+          <attvalue for="1" value="0.15249981540147575" />
+          <attvalue for="2" value="0.47368421052631576" />
+          <attvalue for="3" value="0.6271109428246876" />
+          <attvalue for="4" value="0.041717453657745096" />
+          <attvalue for="5" value="0.051808832294915716" />
+          <attvalue for="6" value="0.05180883229491567" />
+          <attvalue for="7" value="45" />
+          <attvalue for="8" value="744" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Tom Riddle" label="Tom Riddle">
+        <attvalues>
+          <attvalue for="0" value="0.08538582556225578" />
+          <attvalue for="1" value="0.04221103155036153" />
+          <attvalue for="2" value="0.23157894736842105" />
+          <attvalue for="3" value="0.5347755892799483" />
+          <attvalue for="4" value="0.0171884209621165" />
+          <attvalue for="5" value="0.02674156923533867" />
+          <attvalue for="6" value="0.026741569235338696" />
+          <attvalue for="7" value="22" />
+          <attvalue for="8" value="368" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Rubeus Hagrid" label="Rubeus Hagrid">
+        <attvalues>
+          <attvalue for="0" value="0.09142049379676323" />
+          <attvalue for="1" value="0.05031896865282261" />
+          <attvalue for="2" value="0.28421052631578947" />
+          <attvalue for="3" value="0.5482290632240979" />
+          <attvalue for="4" value="0.022884370713194584" />
+          <attvalue for="5" value="0.028631333936177426" />
+          <attvalue for="6" value="0.02863133393617743" />
+          <attvalue for="7" value="27" />
+          <attvalue for="8" value="417" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Ginevra Weasley" label="Ginevra Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.08693083140013956" />
+          <attvalue for="1" value="0.02852031243902662" />
+          <attvalue for="2" value="0.29473684210526313" />
+          <attvalue for="3" value="0.5482290632240979" />
+          <attvalue for="4" value="0.022498936411363593" />
+          <attvalue for="5" value="0.027225200559092954" />
+          <attvalue for="6" value="0.027225200559092964" />
+          <attvalue for="7" value="28" />
+          <attvalue for="8" value="479" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Dobby" label="Dobby">
+        <attvalues>
+          <attvalue for="0" value="0.05981932670952218" />
+          <attvalue for="1" value="0.0018515123050397407" />
+          <attvalue for="2" value="0.1368421052631579" />
+          <attvalue for="3" value="0.4924769550996135" />
+          <attvalue for="4" value="0.011058752114422449" />
+          <attvalue for="5" value="0.018734534361741117" />
+          <attvalue for="6" value="0.01873453436174113" />
+          <attvalue for="7" value="13" />
+          <attvalue for="8" value="231" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Fred Weasley" label="Fred Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.08245735918340753" />
+          <attvalue for="1" value="0.06330227404437552" />
+          <attvalue for="2" value="0.3368421052631579" />
+          <attvalue for="3" value="0.5697282421740626" />
+          <attvalue for="4" value="0.02517336986300942" />
+          <attvalue for="5" value="0.025824126672226298" />
+          <attvalue for="6" value="0.02582412667222629" />
+          <attvalue for="7" value="32" />
+          <attvalue for="8" value="507" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="George Weasley" label="George Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.07790749850357706" />
+          <attvalue for="1" value="0.054557681201872904" />
+          <attvalue for="2" value="0.3157894736842105" />
+          <attvalue for="3" value="0.5623769100169779" />
+          <attvalue for="4" value="0.024056951256566192" />
+          <attvalue for="5" value="0.024399192292004362" />
+          <attvalue for="6" value="0.02439919229200436" />
+          <attvalue for="7" value="30" />
+          <attvalue for="8" value="486" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Draco Malfoy" label="Draco Malfoy">
+        <attvalues>
+          <attvalue for="0" value="0.07946649971666242" />
+          <attvalue for="1" value="0.08222913140446306" />
+          <attvalue for="2" value="0.3157894736842105" />
+          <attvalue for="3" value="0.5660287081339713" />
+          <attvalue for="4" value="0.01765700356312681" />
+          <attvalue for="5" value="0.024887481128103947" />
+          <attvalue for="6" value="0.02488748112810394" />
+          <attvalue for="7" value="30" />
+          <attvalue for="8" value="375" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Albus Dumbledore" label="Albus Dumbledore">
+        <attvalues>
+          <attvalue for="0" value="0.05300367863336536" />
+          <attvalue for="1" value="0.040117935825927806" />
+          <attvalue for="2" value="0.3157894736842105" />
+          <attvalue for="3" value="0.555212872946698" />
+          <attvalue for="4" value="0.017917726102172248" />
+          <attvalue for="5" value="0.016599872396052887" />
+          <attvalue for="6" value="0.01659987239605289" />
+          <attvalue for="7" value="30" />
+          <attvalue for="8" value="351" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Severus Snape" label="Severus Snape">
+        <attvalues>
+          <attvalue for="0" value="0.06803096301851427" />
+          <attvalue for="1" value="0.00936530078305289" />
+          <attvalue for="2" value="0.24210526315789474" />
+          <attvalue for="3" value="0.5347755892799483" />
+          <attvalue for="4" value="0.014361375751358188" />
+          <attvalue for="5" value="0.021305959052861492" />
+          <attvalue for="6" value="0.02130595905286148" />
+          <attvalue for="7" value="23" />
+          <attvalue for="8" value="301" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Myrtle Warren" label="Myrtle Warren">
+        <attvalues>
+          <attvalue for="0" value="0.050604294077194516" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.10526315789473684" />
+          <attvalue for="3" value="0.4924769550996135" />
+          <attvalue for="4" value="0.010665992927627497" />
+          <attvalue for="5" value="0.015848352122751822" />
+          <attvalue for="6" value="0.015848352122751815" />
+          <attvalue for="7" value="10" />
+          <attvalue for="8" value="193" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Salazar Slytherin" label="Salazar Slytherin">
+        <attvalues>
+          <attvalue for="0" value="0.03890335257107126" />
+          <attvalue for="1" value="0.04522319418448237" />
+          <attvalue for="2" value="0.3368421052631579" />
+          <attvalue for="3" value="0.5734764542936288" />
+          <attvalue for="4" value="0.011020368547242986" />
+          <attvalue for="5" value="0.01218388381482624" />
+          <attvalue for="6" value="0.012183883814826246" />
+          <attvalue for="7" value="32" />
+          <attvalue for="8" value="209" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Argus Filch" label="Argus Filch">
+        <attvalues>
+          <attvalue for="0" value="0.040041242029352754" />
+          <attvalue for="1" value="0.011088561813905818" />
+          <attvalue for="2" value="0.18947368421052632" />
+          <attvalue for="3" value="0.518859649122807" />
+          <attvalue for="4" value="0.008765250788741697" />
+          <attvalue for="5" value="0.012540241588200995" />
+          <attvalue for="6" value="0.012540241588201006" />
+          <attvalue for="7" value="18" />
+          <attvalue for="8" value="169" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Minerva McGonagall" label="Minerva McGonagall">
+        <attvalues>
+          <attvalue for="0" value="0.04862269632796537" />
+          <attvalue for="1" value="0.05902632150048763" />
+          <attvalue for="2" value="0.2631578947368421" />
+          <attvalue for="3" value="0.5482290632240979" />
+          <attvalue for="4" value="0.011180340820877056" />
+          <attvalue for="5" value="0.015227717257818296" />
+          <attvalue for="6" value="0.015227717257818293" />
+          <attvalue for="7" value="25" />
+          <attvalue for="8" value="219" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Vernon Dursley" label="Vernon Dursley">
+        <attvalues>
+          <attvalue for="0" value="0.02583396046506984" />
+          <attvalue for="1" value="0.006631294548427808" />
+          <attvalue for="2" value="0.10526315789473684" />
+          <attvalue for="3" value="0.47374141876430204" />
+          <attvalue for="4" value="0.007051294085843799" />
+          <attvalue for="5" value="0.00809082907701546" />
+          <attvalue for="6" value="0.008090829077015473" />
+          <attvalue for="7" value="10" />
+          <attvalue for="8" value="114" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="4" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Percy Weasley" label="Percy Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.0505580841153687" />
+          <attvalue for="1" value="0.06401935951757928" />
+          <attvalue for="2" value="0.28421052631578947" />
+          <attvalue for="3" value="0.5482290632240979" />
+          <attvalue for="4" value="0.017213494155508446" />
+          <attvalue for="5" value="0.01583380729841517" />
+          <attvalue for="6" value="0.01583380729841517" />
+          <attvalue for="7" value="27" />
+          <attvalue for="8" value="313" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Sorting Hat" label="Sorting Hat">
+        <attvalues>
+          <attvalue for="0" value="0.024974791965804575" />
+          <attvalue for="1" value="0.02333897613249921" />
+          <attvalue for="2" value="0.12631578947368421" />
+          <attvalue for="3" value="0.4952751196172249" />
+          <attvalue for="4" value="0.006433931303935008" />
+          <attvalue for="5" value="0.007821732375259308" />
+          <attvalue for="6" value="0.007821732375259322" />
+          <attvalue for="7" value="12" />
+          <attvalue for="8" value="101" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Oliver Wood" label="Oliver Wood">
+        <attvalues>
+          <attvalue for="0" value="0.02320518863099384" />
+          <attvalue for="1" value="0.05673305141656683" />
+          <attvalue for="2" value="0.18947368421052632" />
+          <attvalue for="3" value="0.5038637055065409" />
+          <attvalue for="4" value="0.009756922088690187" />
+          <attvalue for="5" value="0.007267532880310935" />
+          <attvalue for="6" value="0.0072675328803109476" />
+          <attvalue for="7" value="18" />
+          <attvalue for="8" value="136" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Lucius Malfoy" label="Lucius Malfoy">
+        <attvalues>
+          <attvalue for="0" value="0.026681754676129224" />
+          <attvalue for="1" value="0.007400361902173378" />
+          <attvalue for="2" value="0.15789473684210525" />
+          <attvalue for="3" value="0.5097568482610034" />
+          <attvalue for="4" value="0.00969132247595495" />
+          <attvalue for="5" value="0.008356289324981928" />
+          <attvalue for="6" value="0.008356289324981931" />
+          <attvalue for="7" value="15" />
+          <attvalue for="8" value="187" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Molly Weasley" label="Molly Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.02649829134710428" />
+          <attvalue for="1" value="0.0020933266062045457" />
+          <attvalue for="2" value="0.14736842105263157" />
+          <attvalue for="3" value="0.5067931456548348" />
+          <attvalue for="4" value="0.0072419857547274865" />
+          <attvalue for="5" value="0.008298820404740389" />
+          <attvalue for="6" value="0.008298820404740389" />
+          <attvalue for="7" value="14" />
+          <attvalue for="8" value="134" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Godric Gryffindor" label="Godric Gryffindor">
+        <attvalues>
+          <attvalue for="0" value="0.026461600875738966" />
+          <attvalue for="1" value="0.011776518610445368" />
+          <attvalue for="2" value="0.24210526315789474" />
+          <attvalue for="3" value="0.5380766731643924" />
+          <attvalue for="4" value="0.008042194649726345" />
+          <attvalue for="5" value="0.00828731254123142" />
+          <attvalue for="6" value="0.00828731254123141" />
+          <attvalue for="7" value="23" />
+          <attvalue for="8" value="137" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Fawkes" label="Fawkes">
+        <attvalues>
+          <attvalue for="0" value="0.01847350098523794" />
+          <attvalue for="1" value="0.0038965555485166213" />
+          <attvalue for="2" value="0.09473684210526316" />
+          <attvalue for="3" value="0.4842690058479532" />
+          <attvalue for="4" value="0.00458308846534345" />
+          <attvalue for="5" value="0.005785630581755248" />
+          <attvalue for="6" value="0.005785630581755253" />
+          <attvalue for="7" value="9" />
+          <attvalue for="8" value="73" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Gregory Goyle" label="Gregory Goyle">
+        <attvalues>
+          <attvalue for="0" value="0.03120349773085424" />
+          <attvalue for="1" value="0.011838386617993392" />
+          <attvalue for="2" value="0.1368421052631579" />
+          <attvalue for="3" value="0.5009679370840895" />
+          <attvalue for="4" value="0.009146501215031185" />
+          <attvalue for="5" value="0.009772332261762703" />
+          <attvalue for="6" value="0.0097723322617627" />
+          <attvalue for="7" value="13" />
+          <attvalue for="8" value="179" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Vincent Crabbe" label="Vincent Crabbe">
+        <attvalues>
+          <attvalue for="0" value="0.0205622968838942" />
+          <attvalue for="1" value="0.007929164131428733" />
+          <attvalue for="2" value="0.12631578947368421" />
+          <attvalue for="3" value="0.4924769550996135" />
+          <attvalue for="4" value="0.007032646037484224" />
+          <attvalue for="5" value="0.00643968681322885" />
+          <attvalue for="6" value="0.006439686813228844" />
+          <attvalue for="7" value="12" />
+          <attvalue for="8" value="130" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Fang" label="Fang">
+        <attvalues>
+          <attvalue for="0" value="0.02709097621144841" />
+          <attvalue for="1" value="0.006291730586933385" />
+          <attvalue for="2" value="0.08421052631578947" />
+          <attvalue for="3" value="0.4842690058479532" />
+          <attvalue for="4" value="0.0058997182651136446" />
+          <attvalue for="5" value="0.008484390516368602" />
+          <attvalue for="6" value="0.008484390516368599" />
+          <attvalue for="7" value="8" />
+          <attvalue for="8" value="103" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Colin Creevey" label="Colin Creevey">
+        <attvalues>
+          <attvalue for="0" value="0.020538971953850158" />
+          <attvalue for="1" value="0.01737264262122205" />
+          <attvalue for="2" value="0.19999999999999998" />
+          <attvalue for="3" value="0.5219665931295304" />
+          <attvalue for="4" value="0.006200612508769073" />
+          <attvalue for="5" value="0.006432474617826099" />
+          <attvalue for="6" value="0.006432474617826105" />
+          <attvalue for="7" value="19" />
+          <attvalue for="8" value="109" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Justin Finch-Fletchley" label="Justin Finch-Fletchley">
+        <attvalues>
+          <attvalue for="0" value="0.015581317494570548" />
+          <attvalue for="1" value="0.11662232856053559" />
+          <attvalue for="2" value="0.16842105263157894" />
+          <attvalue for="3" value="0.5127554179566564" />
+          <attvalue for="4" value="0.004669171736953256" />
+          <attvalue for="5" value="0.004879849376582682" />
+          <attvalue for="6" value="0.004879849376582686" />
+          <attvalue for="7" value="16" />
+          <attvalue for="8" value="64" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Dudley Dursley" label="Dudley Dursley">
+        <attvalues>
+          <attvalue for="0" value="0.01396319559952588" />
+          <attvalue for="1" value="0.007896320902381111" />
+          <attvalue for="2" value="0.09473684210526316" />
+          <attvalue for="3" value="0.4763301696865114" />
+          <attvalue for="4" value="0.004977232810363453" />
+          <attvalue for="5" value="0.004373070216288881" />
+          <attvalue for="6" value="0.004373070216288887" />
+          <attvalue for="7" value="9" />
+          <attvalue for="8" value="66" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="4" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Hedwig" label="Hedwig">
+        <attvalues>
+          <attvalue for="0" value="0.0160853142420541" />
+          <attvalue for="1" value="0.001104178886933646" />
+          <attvalue for="2" value="0.05263157894736842" />
+          <attvalue for="3" value="0.46366181410974244" />
+          <attvalue for="4" value="0.003656621918434892" />
+          <attvalue for="5" value="0.005037653874041122" />
+          <attvalue for="6" value="0.0050376538740411194" />
+          <attvalue for="7" value="5" />
+          <attvalue for="8" value="52" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Neville Longbottom" label="Neville Longbottom">
+        <attvalues>
+          <attvalue for="0" value="0.017423372379360105" />
+          <attvalue for="1" value="0.03076981242121879" />
+          <attvalue for="2" value="0.16842105263157894" />
+          <attvalue for="3" value="0.5067931456548348" />
+          <attvalue for="4" value="0.006525526522230611" />
+          <attvalue for="5" value="0.005456696269151358" />
+          <attvalue for="6" value="0.0054566962691513544" />
+          <attvalue for="7" value="16" />
+          <attvalue for="8" value="79" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Borgin" label="Borgin">
+        <attvalues>
+          <attvalue for="0" value="0.011545133858650134" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.031578947368421054" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.0029622118229897373" />
+          <attvalue for="5" value="0.0036157712735498133" />
+          <attvalue for="6" value="0.003615771273549815" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="35" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Petunia Dursley" label="Petunia Dursley">
+        <attvalues>
+          <attvalue for="0" value="0.011129573249559665" />
+          <attvalue for="1" value="0.031145086046590335" />
+          <attvalue for="2" value="0.10526315789473684" />
+          <attvalue for="3" value="0.48697441928844454" />
+          <attvalue for="4" value="0.005683084358666296" />
+          <attvalue for="5" value="0.003485621574216778" />
+          <attvalue for="6" value="0.0034856215742167574" />
+          <attvalue for="7" value="10" />
+          <attvalue for="8" value="73" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="4" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Poppy Pomfrey" label="Poppy Pomfrey">
+        <attvalues>
+          <attvalue for="0" value="0.015845358708705497" />
+          <attvalue for="1" value="0.012648747259444842" />
+          <attvalue for="2" value="0.12631578947368421" />
+          <attvalue for="3" value="0.4952751196172249" />
+          <attvalue for="4" value="0.00445293834595073" />
+          <attvalue for="5" value="0.004962482287723472" />
+          <attvalue for="6" value="0.004962482287723469" />
+          <attvalue for="7" value="12" />
+          <attvalue for="8" value="70" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Mrs Norris" label="Mrs Norris">
+        <attvalues>
+          <attvalue for="0" value="0.013101238810390523" />
+          <attvalue for="1" value="0.021368064755817453" />
+          <attvalue for="2" value="0.12631578947368421" />
+          <attvalue for="3" value="0.4952751196172249" />
+          <attvalue for="4" value="0.0052130989801743195" />
+          <attvalue for="5" value="0.004103061736455885" />
+          <attvalue for="6" value="0.0041030617364558875" />
+          <attvalue for="7" value="12" />
+          <attvalue for="8" value="86" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Peeves" label="Peeves">
+        <attvalues>
+          <attvalue for="0" value="0.0062873429126679686" />
+          <attvalue for="1" value="0.031937290033594634" />
+          <attvalue for="2" value="0.08421052631578947" />
+          <attvalue for="3" value="0.46614128905150576" />
+          <attvalue for="4" value="0.0038517910316899404" />
+          <attvalue for="5" value="0.0019691064521807013" />
+          <attvalue for="6" value="0.0019691064521807056" />
+          <attvalue for="7" value="8" />
+          <attvalue for="8" value="41" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Marcus Flint" label="Marcus Flint">
+        <attvalues>
+          <attvalue for="0" value="0.008178997822520278" />
+          <attvalue for="1" value="0.007779368591828072" />
+          <attvalue for="2" value="0.11578947368421053" />
+          <attvalue for="3" value="0.4952751196172249" />
+          <attvalue for="4" value="0.004186609828083598" />
+          <attvalue for="5" value="0.002561527124805055" />
+          <attvalue for="6" value="0.0025615271248050553" />
+          <attvalue for="7" value="11" />
+          <attvalue for="8" value="55" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Dean Thomas" label="Dean Thomas">
+        <attvalues>
+          <attvalue for="0" value="0.010507845101084249" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.09473684210526316" />
+          <attvalue for="3" value="0.4897102306327617" />
+          <attvalue for="4" value="0.004285119013548499" />
+          <attvalue for="5" value="0.003290854550584314" />
+          <attvalue for="6" value="0.003290854550584313" />
+          <attvalue for="7" value="9" />
+          <attvalue for="8" value="55" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Cuthbert Binns" label="Cuthbert Binns">
+        <attvalues>
+          <attvalue for="0" value="0.006453250804135146" />
+          <attvalue for="1" value="0.009330439981340173" />
+          <attvalue for="2" value="0.07368421052631578" />
+          <attvalue for="3" value="0.48159348647862754" />
+          <attvalue for="4" value="0.002707035436032683" />
+          <attvalue for="5" value="0.002021034080136235" />
+          <attvalue for="6" value="0.0020210340801362324" />
+          <attvalue for="7" value="7" />
+          <attvalue for="8" value="28" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Arthur Weasley" label="Arthur Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.0068356858290347" />
+          <attvalue for="1" value="0.004591226435762025" />
+          <attvalue for="2" value="0.1368421052631579" />
+          <attvalue for="3" value="0.4981052631578947" />
+          <attvalue for="4" value="0.0034636340484746403" />
+          <attvalue for="5" value="0.002140818489338999" />
+          <attvalue for="6" value="0.002140818489338995" />
+          <attvalue for="7" value="13" />
+          <attvalue for="8" value="42" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Seamus Finnigan" label="Seamus Finnigan">
+        <attvalues>
+          <attvalue for="0" value="0.006230586448844032" />
+          <attvalue for="1" value="0.002472287213306977" />
+          <attvalue for="2" value="0.10526315789473684" />
+          <attvalue for="3" value="0.4897102306327617" />
+          <attvalue for="4" value="0.0037863821890646962" />
+          <attvalue for="5" value="0.001951290833828887" />
+          <attvalue for="6" value="0.0019512908338288843" />
+          <attvalue for="7" value="10" />
+          <attvalue for="8" value="44" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Father Christmas" label="Father Christmas">
+        <attvalues>
+          <attvalue for="0" value="0.009226934810667789" />
+          <attvalue for="1" value="0.012327389688114134" />
+          <attvalue for="2" value="0.14736842105263157" />
+          <attvalue for="3" value="0.4897102306327617" />
+          <attvalue for="4" value="0.004049504542113756" />
+          <attvalue for="5" value="0.002889692926769906" />
+          <attvalue for="6" value="0.002889692926769898" />
+          <attvalue for="7" value="14" />
+          <attvalue for="8" value="58" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Errol" label="Errol">
+        <attvalues>
+          <attvalue for="0" value="0.0068739962141527965" />
+          <attvalue for="1" value="0.003707074704304622" />
+          <attvalue for="2" value="0.06315789473684211" />
+          <attvalue for="3" value="0.4711806543385491" />
+          <attvalue for="4" value="0.0026286594053875905" />
+          <attvalue for="5" value="0.002152804709447434" />
+          <attvalue for="6" value="0.0021528047094474248" />
+          <attvalue for="7" value="6" />
+          <attvalue for="8" value="26" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Millicent Bulstrode" label="Millicent Bulstrode">
+        <attvalues>
+          <attvalue for="0" value="0.006032090093306436" />
+          <attvalue for="1" value="0.003029065627608128" />
+          <attvalue for="2" value="0.08421052631578947" />
+          <attvalue for="3" value="0.4711806543385491" />
+          <attvalue for="4" value="0.002721690601845079" />
+          <attvalue for="5" value="0.0018891259545703602" />
+          <attvalue for="6" value="0.0018891259545703615" />
+          <attvalue for="7" value="8" />
+          <attvalue for="8" value="28" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Helga Hufflepuff" label="Helga Hufflepuff">
+        <attvalues>
+          <attvalue for="0" value="0.004885716311840225" />
+          <attvalue for="1" value="0.045177354401159095" />
+          <attvalue for="2" value="0.1368421052631579" />
+          <attvalue for="3" value="0.48697441928844454" />
+          <attvalue for="4" value="0.004323037048397498" />
+          <attvalue for="5" value="0.0015301229267769235" />
+          <attvalue for="6" value="0.001530122926776923" />
+          <attvalue for="7" value="13" />
+          <attvalue for="8" value="33" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Wagga Wagga Werewolf" label="Wagga Wagga Werewolf">
+        <attvalues>
+          <attvalue for="0" value="0.0011408150476347881" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.0020316440912140953" />
+          <attvalue for="5" value="0.00035728033772183804" />
+          <attvalue for="6" value="0.00035728033772183793" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="10" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Cornelius Fudge" label="Cornelius Fudge">
+        <attvalues>
+          <attvalue for="0" value="0.0017134745488620732" />
+          <attvalue for="1" value="0.01204161535628501" />
+          <attvalue for="2" value="0.06315789473684211" />
+          <attvalue for="3" value="0.46614128905150576" />
+          <attvalue for="4" value="0.0026709082269134026" />
+          <attvalue for="5" value="0.0005366217507840806" />
+          <attvalue for="6" value="0.0005366217507840799" />
+          <attvalue for="7" value="6" />
+          <attvalue for="8" value="25" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Mason" label="Mason">
+        <attvalues>
+          <attvalue for="0" value="0.001154046287417156" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.042105263157894736" />
+          <attvalue for="3" value="0.4516498500136351" />
+          <attvalue for="4" value="0.002690807457398294" />
+          <attvalue for="5" value="0.00036142995787629307" />
+          <attvalue for="6" value="0.00036142995787629556" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="19" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="4" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Penelope Clearwater" label="Penelope Clearwater">
+        <attvalues>
+          <attvalue for="0" value="0.0007133804747201328" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.05263157894736842" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.002755615307106115" />
+          <attvalue for="5" value="0.00022341811259727392" />
+          <attvalue for="6" value="0.00022341811259727687" />
+          <attvalue for="7" value="5" />
+          <attvalue for="8" value="19" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Rowena Ravenclaw" label="Rowena Ravenclaw">
+        <attvalues>
+          <attvalue for="0" value="0.0027948734527900973" />
+          <attvalue for="1" value="0.000577240974777369" />
+          <attvalue for="2" value="0.11578947368421053" />
+          <attvalue for="3" value="0.48159348647862754" />
+          <attvalue for="4" value="0.004206080183302076" />
+          <attvalue for="5" value="0.0008753051633329193" />
+          <attvalue for="6" value="0.0008753051633329202" />
+          <attvalue for="7" value="11" />
+          <attvalue for="8" value="40" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Pomona Sprout" label="Pomona Sprout">
+        <attvalues>
+          <attvalue for="0" value="0.005103184981491621" />
+          <attvalue for="1" value="0.012206133290296668" />
+          <attvalue for="2" value="0.12631578947368421" />
+          <attvalue for="3" value="0.4981052631578947" />
+          <attvalue for="4" value="0.003092442044908164" />
+          <attvalue for="5" value="0.0015982194973158273" />
+          <attvalue for="6" value="0.0015982194973158195" />
+          <attvalue for="7" value="12" />
+          <attvalue for="8" value="32" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Lee Jordan" label="Lee Jordan">
+        <attvalues>
+          <attvalue for="0" value="0.0021997864406106773" />
+          <attvalue for="1" value="0.027284996178812547" />
+          <attvalue for="2" value="0.11578947368421053" />
+          <attvalue for="3" value="0.4842690058479532" />
+          <attvalue for="4" value="0.002624781781598343" />
+          <attvalue for="5" value="0.0006889328625046284" />
+          <attvalue for="6" value="0.0006889328625046309" />
+          <attvalue for="7" value="11" />
+          <attvalue for="8" value="22" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Filius Flitwick" label="Filius Flitwick">
+        <attvalues>
+          <attvalue for="0" value="0.0036874180666725776" />
+          <attvalue for="1" value="0.044830483738804036" />
+          <attvalue for="2" value="0.12631578947368421" />
+          <attvalue for="3" value="0.4952751196172249" />
+          <attvalue for="4" value="0.004089028079962154" />
+          <attvalue for="5" value="0.0011548168851340174" />
+          <attvalue for="6" value="0.0011548168851340172" />
+          <attvalue for="7" value="12" />
+          <attvalue for="8" value="23" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Aragog" label="Aragog">
+        <attvalues>
+          <attvalue for="0" value="0.0031967200491325723" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.031578947368421054" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.0021051086536482875" />
+          <attvalue for="5" value="0.0010011559338124658" />
+          <attvalue for="6" value="0.0010011559338124678" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="13" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Rolanda Hooch" label="Rolanda Hooch">
+        <attvalues>
+          <attvalue for="0" value="0.0018776009520332089" />
+          <attvalue for="1" value="0.0010595880416709085" />
+          <attvalue for="2" value="0.06315789473684211" />
+          <attvalue for="3" value="0.46366181410974244" />
+          <attvalue for="4" value="0.0023526790666526815" />
+          <attvalue for="5" value="0.0005880375379250729" />
+          <attvalue for="6" value="0.0005880375379250684" />
+          <attvalue for="7" value="6" />
+          <attvalue for="8" value="14" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Chudley Cannons" label="Chudley Cannons">
+        <attvalues>
+          <attvalue for="0" value="0.0024663621757157364" />
+          <attvalue for="1" value="0.004319931033256901" />
+          <attvalue for="2" value="0.031578947368421054" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.0018720638290087481" />
+          <attvalue for="5" value="0.0007724104010879913" />
+          <attvalue for="6" value="0.0007724104010879904" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="8" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Perkins" label="Perkins">
+        <attvalues>
+          <attvalue for="0" value="0.0022615753890501424" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.4516498500136351" />
+          <attvalue for="4" value="0.0018340078554482048" />
+          <attvalue for="5" value="0.0007082754977758573" />
+          <attvalue for="6" value="0.000708275497775857" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="7" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Hannah Abbott" label="Hannah Abbott">
+        <attvalues>
+          <attvalue for="0" value="0.002027508173753796" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.4516498500136351" />
+          <attvalue for="4" value="0.0018018902875473189" />
+          <attvalue for="5" value="0.0006349842738907239" />
+          <attvalue for="6" value="0.0006349842738907212" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="6" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Irma Pince" label="Irma Pince">
+        <attvalues>
+          <attvalue for="0" value="0.002492652236025374" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.042105263157894736" />
+          <attvalue for="3" value="0.4612085769980506" />
+          <attvalue for="4" value="0.0019498374587160004" />
+          <attvalue for="5" value="0.000780646800873757" />
+          <attvalue for="6" value="0.0007806468008737613" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="10" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Veronica Smethley" label="Veronica Smethley">
+        <attvalues>
+          <attvalue for="0" value="0.0014584422120085" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.0017711030892657866" />
+          <attvalue for="5" value="0.0004567635423977002" />
+          <attvalue for="6" value="0.0004567635423976998" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="5" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Patrick Delaney-Podmore" label="Patrick Delaney-Podmore">
+        <attvalues>
+          <attvalue for="0" value="0.001369733126907624" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.44473684210526315" />
+          <attvalue for="4" value="0.0017234467099631983" />
+          <attvalue for="5" value="0.0004289818907265673" />
+          <attvalue for="6" value="0.00042898189072658395" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="4" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="4" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Olive Hornby" label="Olive Hornby">
+        <attvalues>
+          <attvalue for="0" value="0.00015516042333593277" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.35578947368421054" />
+          <attvalue for="4" value="0.0017903114519415002" />
+          <attvalue for="5" value="4.859276922555768e-05" />
+          <attvalue for="6" value="4.859276922555561e-05" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="5" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Alicia Spinnet" label="Alicia Spinnet">
+        <attvalues>
+          <attvalue for="0" value="0.0005105024106773244" />
+          <attvalue for="1" value="0.025753306323295127" />
+          <attvalue for="2" value="0.06315789473684211" />
+          <attvalue for="3" value="0.4612085769980506" />
+          <attvalue for="4" value="0.0026115452921778655" />
+          <attvalue for="5" value="0.0001598808625661928" />
+          <attvalue for="6" value="0.00015988086256619276" />
+          <attvalue for="7" value="6" />
+          <attvalue for="8" value="9" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Angelina Johnson" label="Angelina Johnson">
+        <attvalues>
+          <attvalue for="0" value="0.0009680248529980527" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.06315789473684211" />
+          <attvalue for="3" value="0.4612085769980506" />
+          <attvalue for="4" value="0.003239509261344472" />
+          <attvalue for="5" value="0.00030316983098352656" />
+          <attvalue for="6" value="0.00030316983098352515" />
+          <attvalue for="7" value="6" />
+          <attvalue for="8" value="13" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="William Weasley" label="William Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.0012760744884142447" />
+          <attvalue for="1" value="0.020625510737284802" />
+          <attvalue for="2" value="0.08421052631578947" />
+          <attvalue for="3" value="0.4711806543385491" />
+          <attvalue for="4" value="0.0027082820474456835" />
+          <attvalue for="5" value="0.0003996431587574162" />
+          <attvalue for="6" value="0.00039964315875741567" />
+          <attvalue for="7" value="8" />
+          <attvalue for="8" value="14" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Charles Weasley" label="Charles Weasley">
+        <attvalues>
+          <attvalue for="0" value="0.001127791650988691" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.042105263157894736" />
+          <attvalue for="3" value="0.4540021929824561" />
+          <attvalue for="4" value="0.0023122388502182247" />
+          <attvalue for="5" value="0.00035320834471778143" />
+          <attvalue for="6" value="0.00035320834471778273" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="9" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Ernest Macmillan" label="Ernest Macmillan">
+        <attvalues>
+          <attvalue for="0" value="0.0010385315950271498" />
+          <attvalue for="1" value="0.020685921021867275" />
+          <attvalue for="2" value="0.042105263157894736" />
+          <attvalue for="3" value="0.4540021929824561" />
+          <attvalue for="4" value="0.0037654535637833106" />
+          <attvalue for="5" value="0.00032525392449008226" />
+          <attvalue for="6" value="0.00032525392449008183" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="8" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="1" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Armando Dippet" label="Armando Dippet">
+        <attvalues>
+          <attvalue for="0" value="0.0009803609234616652" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.042105263157894736" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.0019490632342553079" />
+          <attvalue for="5" value="0.0003070325197467491" />
+          <attvalue for="6" value="0.00030703251974675117" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="9" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Bandon Banshee" label="Bandon Banshee">
+        <attvalues>
+          <attvalue for="0" value="0.0002661272553026274" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.3806481268673868" />
+          <attvalue for="4" value="0.0017054691379077653" />
+          <attvalue for="5" value="8.334495501339872e-05" />
+          <attvalue for="6" value="8.334495501339906e-05" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="3" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Mafalda Hopkirk" label="Mafalda Hopkirk">
+        <attvalues>
+          <attvalue for="0" value="0.000684866563453812" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.44473684210526315" />
+          <attvalue for="4" value="0.001642973354981599" />
+          <attvalue for="5" value="0.00021449094536328366" />
+          <attvalue for="6" value="0.0002144909453632881" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="5" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Peter Pettigrew" label="Peter Pettigrew">
+        <attvalues>
+          <attvalue for="0" value="0.0010428410720027142" />
+          <attvalue for="1" value="0.04309110663681995" />
+          <attvalue for="2" value="0.042105263157894736" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.001765919540551352" />
+          <attvalue for="5" value="0.000326595428540148" />
+          <attvalue for="6" value="0.00032659542854016494" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="5" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Katie Bell" label="Katie Bell">
+        <attvalues>
+          <attvalue for="0" value="1.3755884110124496e-05" />
+          <attvalue for="1" value="0.001955953714072415" />
+          <attvalue for="2" value="0.031578947368421054" />
+          <attvalue for="3" value="0.3339786247227263" />
+          <attvalue for="4" value="0.0022938665576839857" />
+          <attvalue for="5" value="4.307970838537167e-06" />
+          <attvalue for="6" value="4.307970838540895e-06" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="4" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Ogden" label="Ogden">
+        <attvalues>
+          <attvalue for="0" value="0.00017741817020175158" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.3806481268673868" />
+          <attvalue for="4" value="0.001657812758605177" />
+          <attvalue for="5" value="5.556330334226582e-05" />
+          <attvalue for="6" value="5.556330334227043e-05" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Merlin" label="Merlin">
+        <attvalues>
+          <attvalue for="0" value="0.0003822049568673456" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.40355750487329434" />
+          <attvalue for="4" value="0.0016958687321657205" />
+          <attvalue for="5" value="0.00011969820665439987" />
+          <attvalue for="6" value="0.00011969820665440005" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="3" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Blood-Sucking Bugbear" label="Blood-Sucking Bugbear">
+        <attvalues>
+          <attvalue for="0" value="9.804753170666897e-05" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.3500739801310505" />
+          <attvalue for="4" value="0.0016557839442117635" />
+          <attvalue for="5" value="3.070618313753534e-05" />
+          <attvalue for="6" value="3.070618313753479e-05" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Parvati Patil" label="Parvati Patil">
+        <attvalues>
+          <attvalue for="0" value="0.0006591065887501987" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.40924141339263653" />
+          <attvalue for="4" value="0.0016823007316746185" />
+          <attvalue for="5" value="0.000206415235111313" />
+          <attvalue for="6" value="0.00020641523511131314" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="3" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Mosag" label="Mosag">
+        <attvalues>
+          <attvalue for="0" value="0.00044048081343357504" />
+          <attvalue for="1" value="0.0014775019780618884" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.4516498500136351" />
+          <attvalue for="4" value="0.001696020621702563" />
+          <attvalue for="5" value="0.00013795165581917718" />
+          <attvalue for="6" value="0.00013795165581917583" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="3" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Adrian Pucey" label="Adrian Pucey">
+        <attvalues>
+          <attvalue for="0" value="0.00041084414775332536" />
+          <attvalue for="1" value="0.02850294215942065" />
+          <attvalue for="2" value="0.042105263157894736" />
+          <attvalue for="3" value="0.4540021929824561" />
+          <attvalue for="4" value="0.0017556978408117398" />
+          <attvalue for="5" value="0.0001286701817407957" />
+          <attvalue for="6" value="0.0001286701817408068" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="4" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Helena Ravenclaw" label="Helena Ravenclaw">
+        <attvalues>
+          <attvalue for="0" value="0.0003558261061450811" />
+          <attvalue for="1" value="0.006523475712857178" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.44701754385964915" />
+          <attvalue for="4" value="0.0016568769858630434" />
+          <attvalue for="5" value="0.00011143975065875042" />
+          <attvalue for="6" value="0.00011143975065874925" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Gladys Gudgeon" label="Gladys Gudgeon">
+        <attvalues>
+          <attvalue for="0" value="0.0004311423668277818" />
+          <attvalue for="1" value="0.02346648107131607" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.45878116343490305" />
+          <attvalue for="4" value="0.0016503930567933881" />
+          <attvalue for="5" value="0.00013502712435277473" />
+          <attvalue for="6" value="0.00013502712435277536" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Miranda Goshawk" label="Miranda Goshawk">
+        <attvalues>
+          <attvalue for="0" value="8.870908510087579e-05" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.3806481268673868" />
+          <attvalue for="4" value="0.0016101563793025884" />
+          <attvalue for="5" value="2.778165167113291e-05" />
+          <attvalue for="6" value="2.7781651671133716e-05" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Terry Boot" label="Terry Boot">
+        <attvalues>
+          <attvalue for="0" value="8.870908510087579e-05" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.3806481268673868" />
+          <attvalue for="4" value="0.0016101563793025884" />
+          <attvalue for="5" value="2.778165167113291e-05" />
+          <attvalue for="6" value="2.778165167112342e-05" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Skower" label="Skower">
+        <attvalues>
+          <attvalue for="0" value="0.000342433281726906" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.44473684210526315" />
+          <attvalue for="4" value="0.0016027366774907996" />
+          <attvalue for="5" value="0.00010724547268164183" />
+          <attvalue for="6" value="0.00010724547268164106" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="6" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Fluffy" label="Fluffy">
+        <attvalues>
+          <attvalue for="0" value="0.00025381055251892843" />
+          <attvalue for="1" value="0.0020353268729528533" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.39802931987503" />
+          <attvalue for="4" value="0.0016471979456664254" />
+          <attvalue for="5" value="7.948799488090173e-05" />
+          <attvalue for="6" value="7.948799488090263e-05" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Hermes" label="Hermes">
+        <attvalues>
+          <attvalue for="0" value="7.132792984227351e-05" />
+          <attvalue for="1" value="0.0014690251367330401" />
+          <attvalue for="2" value="0.021052631578947368" />
+          <attvalue for="3" value="0.3677992449478125" />
+          <attvalue for="4" value="0.001651457215381194" />
+          <attvalue for="5" value="2.2338395977030955e-05" />
+          <attvalue for="6" value="2.2338395977030447e-05" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Fawcett" label="Fawcett">
+        <attvalues>
+          <attvalue for="0" value="5.569217139201821e-07" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.30910787607316165" />
+          <attvalue for="4" value="0.001962722033879833" />
+          <attvalue for="5" value="1.7441217712484884e-07" />
+          <attvalue for="6" value="1.7441217712814208e-07" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="1" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Lavender Brown" label="Lavender Brown">
+        <attvalues>
+          <attvalue for="0" value="9.343169939069744e-06" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.3327038971474488" />
+          <attvalue for="4" value="0.0016327067664480117" />
+          <attvalue for="5" value="2.926065466246969e-06" />
+          <attvalue for="6" value="2.9260654662469822e-06" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Martin Miggs" label="Martin Miggs">
+        <attvalues>
+          <attvalue for="0" value="0.0003153417651192661" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.4054345165238678" />
+          <attvalue for="4" value="0.0016007069000933212" />
+          <attvalue for="5" value="9.875691048251471e-05" />
+          <attvalue for="6" value="9.875691048250879e-05" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Demetrius Prod" label="Demetrius Prod">
+        <attvalues>
+          <attvalue for="0" value="3.0959328600134965e-99" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.010526315789473684" />
+          <attvalue for="4" value="0.010416666666666666" />
+          <attvalue for="5" value="7.429470935614829e-22" />
+          <attvalue for="6" value="1.5462482043951877e-18" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="5" />
+          <attvalue for="10" value="5" />
+          <attvalue for="11" value="2" />
+          <attvalue for="12" value="1" />
+        </attvalues>
+      </node>
+      <node id="Z. Nettles" label="Z. Nettles">
+        <attvalues>
+          <attvalue for="0" value="3.0959328600134965e-99" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.010526315789473684" />
+          <attvalue for="4" value="0.010416666666666666" />
+          <attvalue for="5" value="8.291506893475672e-22" />
+          <attvalue for="6" value="1.3854907487130065e-18" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="5" />
+          <attvalue for="10" value="5" />
+          <attvalue for="11" value="2" />
+          <attvalue for="12" value="1" />
+        </attvalues>
+      </node>
+      <node id="Aurora Sinistra" label="Aurora Sinistra">
+        <attvalues>
+          <attvalue for="0" value="1.977280847910999e-06" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.32770083102493075" />
+          <attvalue for="4" value="0.0017136204891678715" />
+          <attvalue for="5" value="6.192519504031449e-07" />
+          <attvalue for="6" value="6.192519504034727e-07" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="0" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Bloody Baron" label="Bloody Baron">
+        <attvalues>
+          <attvalue for="0" value="0.000342433281726906" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.44473684210526315" />
+          <attvalue for="4" value="0.0016027366774907996" />
+          <attvalue for="5" value="0.00010724547268164183" />
+          <attvalue for="6" value="0.00010724547268164252" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="7" />
+          <attvalue for="12" value="0" />
+        </attvalues>
+      </node>
+      <node id="Angus Fleet" label="Angus Fleet">
+        <attvalues>
+          <attvalue for="0" value="3.0959328600134965e-99" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.010526315789473684" />
+          <attvalue for="4" value="0.010416666666666666" />
+          <attvalue for="5" value="-1.0582564300114904e-21" />
+          <attvalue for="6" value="-2.3668315707101077e-18" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="6" />
+          <attvalue for="10" value="6" />
+          <attvalue for="11" value="3" />
+          <attvalue for="12" value="1" />
+        </attvalues>
+      </node>
+      <node id="Hetty Bayliss" label="Hetty Bayliss">
+        <attvalues>
+          <attvalue for="0" value="3.0959328600134965e-99" />
+          <attvalue for="1" value="0.0" />
+          <attvalue for="2" value="0.010526315789473684" />
+          <attvalue for="3" value="0.010526315789473684" />
+          <attvalue for="4" value="0.010416666666666666" />
+          <attvalue for="5" value="-1.2691752998293593e-21" />
+          <attvalue for="6" value="-1.9734978523415367e-18" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="6" />
+          <attvalue for="10" value="6" />
+          <attvalue for="11" value="3" />
+          <attvalue for="12" value="1" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Harry Potter" target="Ronald Weasley" id="0" weight="1305" />
+      <edge source="Harry Potter" target="Hermione Granger" id="1" weight="615" />
+      <edge source="Harry Potter" target="Gilderoy Lockhart" id="2" weight="303" />
+      <edge source="Harry Potter" target="Tom Riddle" id="3" weight="217" />
+      <edge source="Harry Potter" target="Rubeus Hagrid" id="4" weight="180" />
+      <edge source="Harry Potter" target="Ginevra Weasley" id="5" weight="159" />
+      <edge source="Harry Potter" target="Dobby" id="6" weight="156" />
+      <edge source="Harry Potter" target="Draco Malfoy" id="7" weight="140" />
+      <edge source="Harry Potter" target="Fred Weasley" id="8" weight="133" />
+      <edge source="Harry Potter" target="George Weasley" id="9" weight="124" />
+      <edge source="Harry Potter" target="Albus Dumbledore" id="10" weight="111" />
+      <edge source="Harry Potter" target="Severus Snape" id="11" weight="92" />
+      <edge source="Harry Potter" target="Myrtle Warren" id="12" weight="84" />
+      <edge source="Harry Potter" target="Salazar Slytherin" id="13" weight="82" />
+      <edge source="Harry Potter" target="Argus Filch" id="14" weight="82" />
+      <edge source="Harry Potter" target="Minerva McGonagall" id="15" weight="77" />
+      <edge source="Harry Potter" target="Vernon Dursley" id="16" weight="71" />
+      <edge source="Harry Potter" target="Percy Weasley" id="17" weight="67" />
+      <edge source="Harry Potter" target="Sorting Hat" id="18" weight="64" />
+      <edge source="Harry Potter" target="Oliver Wood" id="19" weight="62" />
+      <edge source="Harry Potter" target="Lucius Malfoy" id="20" weight="57" />
+      <edge source="Harry Potter" target="Molly Weasley" id="21" weight="54" />
+      <edge source="Harry Potter" target="Godric Gryffindor" id="22" weight="49" />
+      <edge source="Harry Potter" target="Fawkes" id="23" weight="49" />
+      <edge source="Harry Potter" target="Fang" id="24" weight="46" />
+      <edge source="Harry Potter" target="Colin Creevey" id="25" weight="44" />
+      <edge source="Harry Potter" target="Gregory Goyle" id="26" weight="43" />
+      <edge source="Harry Potter" target="Justin Finch-Fletchley" id="27" weight="43" />
+      <edge source="Harry Potter" target="Dudley Dursley" id="28" weight="37" />
+      <edge source="Harry Potter" target="Hedwig" id="29" weight="35" />
+      <edge source="Harry Potter" target="Neville Longbottom" id="30" weight="33" />
+      <edge source="Harry Potter" target="Borgin" id="31" weight="31" />
+      <edge source="Harry Potter" target="Petunia Dursley" id="32" weight="30" />
+      <edge source="Harry Potter" target="Poppy Pomfrey" id="33" weight="26" />
+      <edge source="Harry Potter" target="Vincent Crabbe" id="34" weight="22" />
+      <edge source="Harry Potter" target="Mrs Norris" id="35" weight="19" />
+      <edge source="Harry Potter" target="Peeves" id="36" weight="17" />
+      <edge source="Harry Potter" target="Marcus Flint" id="37" weight="16" />
+      <edge source="Harry Potter" target="Dean Thomas" id="38" weight="15" />
+      <edge source="Harry Potter" target="Arthur Weasley" id="39" weight="13" />
+      <edge source="Harry Potter" target="Father Christmas" id="40" weight="11" />
+      <edge source="Harry Potter" target="Errol" id="41" weight="10" />
+      <edge source="Harry Potter" target="Helga Hufflepuff" id="42" weight="10" />
+      <edge source="Harry Potter" target="Cuthbert Binns" id="43" weight="7" />
+      <edge source="Harry Potter" target="Pomona Sprout" id="44" weight="6" />
+      <edge source="Harry Potter" target="Aragog" id="45" weight="6" />
+      <edge source="Harry Potter" target="Seamus Finnigan" id="46" weight="6" />
+      <edge source="Harry Potter" target="Rolanda Hooch" id="47" weight="5" />
+      <edge source="Harry Potter" target="Millicent Bulstrode" id="48" weight="5" />
+      <edge source="Harry Potter" target="Hannah Abbott" id="49" weight="5" />
+      <edge source="Harry Potter" target="Rowena Ravenclaw" id="50" weight="4" />
+      <edge source="Harry Potter" target="Veronica Smethley" id="51" weight="4" />
+      <edge source="Harry Potter" target="Patrick Delaney-Podmore" id="52" weight="4" />
+      <edge source="Harry Potter" target="Mason" id="53" weight="3" />
+      <edge source="Harry Potter" target="Charles Weasley" id="54" weight="3" />
+      <edge source="Harry Potter" target="Lee Jordan" id="55" weight="3" />
+      <edge source="Harry Potter" target="Ernest Macmillan" id="56" weight="3" />
+      <edge source="Harry Potter" target="Chudley Cannons" id="57" weight="2" />
+      <edge source="Harry Potter" target="Irma Pince" id="58" weight="2" />
+      <edge source="Harry Potter" target="Mafalda Hopkirk" id="59" weight="2" />
+      <edge source="Harry Potter" target="Armando Dippet" id="60" weight="2" />
+      <edge source="Harry Potter" target="Angelina Johnson" id="61" weight="2" />
+      <edge source="Harry Potter" target="William Weasley" id="62" weight="2" />
+      <edge source="Harry Potter" target="Perkins" id="63" weight="2" />
+      <edge source="Harry Potter" target="Filius Flitwick" id="64" weight="2" />
+      <edge source="Harry Potter" target="Helena Ravenclaw" id="65" weight="1" />
+      <edge source="Harry Potter" target="Mosag" id="66" weight="1" />
+      <edge source="Harry Potter" target="Gladys Gudgeon" id="67" weight="1" />
+      <edge source="Harry Potter" target="Penelope Clearwater" id="68" weight="1" />
+      <edge source="Harry Potter" target="Peter Pettigrew" id="69" weight="1" />
+      <edge source="Harry Potter" target="Skower" id="70" weight="1" />
+      <edge source="Harry Potter" target="Wagga Wagga Werewolf" id="71" weight="1" />
+      <edge source="Harry Potter" target="Cornelius Fudge" id="72" weight="1" />
+      <edge source="Harry Potter" target="Bloody Baron" id="73" weight="1" />
+      <edge source="Harry Potter" target="Adrian Pucey" id="74" weight="1" />
+      <edge source="Harry Potter" target="Alicia Spinnet" id="75" weight="1" />
+      <edge source="Ronald Weasley" target="Hermione Granger" id="76" weight="493" />
+      <edge source="Ronald Weasley" target="Gilderoy Lockhart" id="77" weight="129" />
+      <edge source="Ronald Weasley" target="Severus Snape" id="78" weight="90" />
+      <edge source="Ronald Weasley" target="Fred Weasley" id="79" weight="77" />
+      <edge source="Ronald Weasley" target="Draco Malfoy" id="80" weight="73" />
+      <edge source="Ronald Weasley" target="George Weasley" id="81" weight="71" />
+      <edge source="Ronald Weasley" target="Ginevra Weasley" id="82" weight="65" />
+      <edge source="Ronald Weasley" target="Rubeus Hagrid" id="83" weight="63" />
+      <edge source="Ronald Weasley" target="Percy Weasley" id="84" weight="57" />
+      <edge source="Ronald Weasley" target="Minerva McGonagall" id="85" weight="55" />
+      <edge source="Ronald Weasley" target="Myrtle Warren" id="86" weight="42" />
+      <edge source="Ronald Weasley" target="Gregory Goyle" id="87" weight="38" />
+      <edge source="Ronald Weasley" target="Fang" id="88" weight="33" />
+      <edge source="Ronald Weasley" target="Vincent Crabbe" id="89" weight="32" />
+      <edge source="Ronald Weasley" target="Argus Filch" id="90" weight="28" />
+      <edge source="Ronald Weasley" target="Albus Dumbledore" id="91" weight="23" />
+      <edge source="Ronald Weasley" target="Salazar Slytherin" id="92" weight="21" />
+      <edge source="Ronald Weasley" target="Godric Gryffindor" id="93" weight="18" />
+      <edge source="Ronald Weasley" target="Tom Riddle" id="94" weight="16" />
+      <edge source="Ronald Weasley" target="Neville Longbottom" id="95" weight="14" />
+      <edge source="Ronald Weasley" target="Molly Weasley" id="96" weight="14" />
+      <edge source="Ronald Weasley" target="Dean Thomas" id="97" weight="13" />
+      <edge source="Ronald Weasley" target="Dobby" id="98" weight="12" />
+      <edge source="Ronald Weasley" target="Hedwig" id="99" weight="12" />
+      <edge source="Ronald Weasley" target="Father Christmas" id="100" weight="11" />
+      <edge source="Ronald Weasley" target="Poppy Pomfrey" id="101" weight="11" />
+      <edge source="Ronald Weasley" target="Mrs Norris" id="102" weight="10" />
+      <edge source="Ronald Weasley" target="Errol" id="103" weight="8" />
+      <edge source="Ronald Weasley" target="Seamus Finnigan" id="104" weight="8" />
+      <edge source="Ronald Weasley" target="Millicent Bulstrode" id="105" weight="7" />
+      <edge source="Ronald Weasley" target="Filius Flitwick" id="106" weight="6" />
+      <edge source="Ronald Weasley" target="Colin Creevey" id="107" weight="6" />
+      <edge source="Ronald Weasley" target="Sorting Hat" id="108" weight="6" />
+      <edge source="Ronald Weasley" target="Chudley Cannons" id="109" weight="5" />
+      <edge source="Ronald Weasley" target="Perkins" id="110" weight="5" />
+      <edge source="Ronald Weasley" target="Lucius Malfoy" id="111" weight="5" />
+      <edge source="Ronald Weasley" target="Helga Hufflepuff" id="112" weight="4" />
+      <edge source="Ronald Weasley" target="Cuthbert Binns" id="113" weight="4" />
+      <edge source="Ronald Weasley" target="Arthur Weasley" id="114" weight="4" />
+      <edge source="Ronald Weasley" target="Vernon Dursley" id="115" weight="3" />
+      <edge source="Ronald Weasley" target="Pomona Sprout" id="116" weight="3" />
+      <edge source="Ronald Weasley" target="Irma Pince" id="117" weight="3" />
+      <edge source="Ronald Weasley" target="Fawkes" id="118" weight="3" />
+      <edge source="Ronald Weasley" target="Aragog" id="119" weight="3" />
+      <edge source="Ronald Weasley" target="Peter Pettigrew" id="120" weight="2" />
+      <edge source="Ronald Weasley" target="Dudley Dursley" id="121" weight="2" />
+      <edge source="Ronald Weasley" target="Cornelius Fudge" id="122" weight="2" />
+      <edge source="Ronald Weasley" target="Parvati Patil" id="123" weight="2" />
+      <edge source="Ronald Weasley" target="Oliver Wood" id="124" weight="1" />
+      <edge source="Ronald Weasley" target="William Weasley" id="125" weight="1" />
+      <edge source="Ronald Weasley" target="Hannah Abbott" id="126" weight="1" />
+      <edge source="Ronald Weasley" target="Justin Finch-Fletchley" id="127" weight="1" />
+      <edge source="Ronald Weasley" target="Lee Jordan" id="128" weight="1" />
+      <edge source="Ronald Weasley" target="Marcus Flint" id="129" weight="1" />
+      <edge source="Ronald Weasley" target="Martin Miggs" id="130" weight="1" />
+      <edge source="Ronald Weasley" target="Borgin" id="131" weight="1" />
+      <edge source="Ronald Weasley" target="Petunia Dursley" id="132" weight="1" />
+      <edge source="Hermione Granger" target="Gilderoy Lockhart" id="133" weight="75" />
+      <edge source="Hermione Granger" target="Myrtle Warren" id="134" weight="39" />
+      <edge source="Hermione Granger" target="Rubeus Hagrid" id="135" weight="28" />
+      <edge source="Hermione Granger" target="Draco Malfoy" id="136" weight="22" />
+      <edge source="Hermione Granger" target="Percy Weasley" id="137" weight="19" />
+      <edge source="Hermione Granger" target="George Weasley" id="138" weight="17" />
+      <edge source="Hermione Granger" target="Ginevra Weasley" id="139" weight="16" />
+      <edge source="Hermione Granger" target="Severus Snape" id="140" weight="16" />
+      <edge source="Hermione Granger" target="Poppy Pomfrey" id="141" weight="14" />
+      <edge source="Hermione Granger" target="Cuthbert Binns" id="142" weight="13" />
+      <edge source="Hermione Granger" target="Gregory Goyle" id="143" weight="13" />
+      <edge source="Hermione Granger" target="Fred Weasley" id="144" weight="13" />
+      <edge source="Hermione Granger" target="Minerva McGonagall" id="145" weight="12" />
+      <edge source="Hermione Granger" target="Godric Gryffindor" id="146" weight="12" />
+      <edge source="Hermione Granger" target="Millicent Bulstrode" id="147" weight="10" />
+      <edge source="Hermione Granger" target="Argus Filch" id="148" weight="10" />
+      <edge source="Hermione Granger" target="Tom Riddle" id="149" weight="9" />
+      <edge source="Hermione Granger" target="Colin Creevey" id="150" weight="8" />
+      <edge source="Hermione Granger" target="Albus Dumbledore" id="151" weight="7" />
+      <edge source="Hermione Granger" target="Dobby" id="152" weight="7" />
+      <edge source="Hermione Granger" target="Vincent Crabbe" id="153" weight="7" />
+      <edge source="Hermione Granger" target="Mrs Norris" id="154" weight="7" />
+      <edge source="Hermione Granger" target="Salazar Slytherin" id="155" weight="6" />
+      <edge source="Hermione Granger" target="Pomona Sprout" id="156" weight="6" />
+      <edge source="Hermione Granger" target="Father Christmas" id="157" weight="6" />
+      <edge source="Hermione Granger" target="Lucius Malfoy" id="158" weight="6" />
+      <edge source="Hermione Granger" target="Marcus Flint" id="159" weight="5" />
+      <edge source="Hermione Granger" target="Errol" id="160" weight="4" />
+      <edge source="Hermione Granger" target="Irma Pince" id="161" weight="4" />
+      <edge source="Hermione Granger" target="Rowena Ravenclaw" id="162" weight="4" />
+      <edge source="Hermione Granger" target="Molly Weasley" id="163" weight="4" />
+      <edge source="Hermione Granger" target="Seamus Finnigan" id="164" weight="4" />
+      <edge source="Hermione Granger" target="Dean Thomas" id="165" weight="4" />
+      <edge source="Hermione Granger" target="Neville Longbottom" id="166" weight="4" />
+      <edge source="Hermione Granger" target="Borgin" id="167" weight="3" />
+      <edge source="Hermione Granger" target="Filius Flitwick" id="168" weight="3" />
+      <edge source="Hermione Granger" target="Lee Jordan" id="169" weight="2" />
+      <edge source="Hermione Granger" target="Dudley Dursley" id="170" weight="2" />
+      <edge source="Hermione Granger" target="Sorting Hat" id="171" weight="2" />
+      <edge source="Hermione Granger" target="Hedwig" id="172" weight="1" />
+      <edge source="Hermione Granger" target="Fluffy" id="173" weight="1" />
+      <edge source="Hermione Granger" target="Justin Finch-Fletchley" id="174" weight="1" />
+      <edge source="Hermione Granger" target="Merlin" id="175" weight="1" />
+      <edge source="Hermione Granger" target="Chudley Cannons" id="176" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Severus Snape" id="177" weight="36" />
+      <edge source="Gilderoy Lockhart" target="Ginevra Weasley" id="178" weight="24" />
+      <edge source="Gilderoy Lockhart" target="Albus Dumbledore" id="179" weight="17" />
+      <edge source="Gilderoy Lockhart" target="Rubeus Hagrid" id="180" weight="15" />
+      <edge source="Gilderoy Lockhart" target="Minerva McGonagall" id="181" weight="12" />
+      <edge source="Gilderoy Lockhart" target="Mrs Norris" id="182" weight="10" />
+      <edge source="Gilderoy Lockhart" target="Lucius Malfoy" id="183" weight="9" />
+      <edge source="Gilderoy Lockhart" target="Marcus Flint" id="184" weight="9" />
+      <edge source="Gilderoy Lockhart" target="Wagga Wagga Werewolf" id="185" weight="9" />
+      <edge source="Gilderoy Lockhart" target="Draco Malfoy" id="186" weight="8" />
+      <edge source="Gilderoy Lockhart" target="Pomona Sprout" id="187" weight="8" />
+      <edge source="Gilderoy Lockhart" target="Seamus Finnigan" id="188" weight="7" />
+      <edge source="Gilderoy Lockhart" target="Neville Longbottom" id="189" weight="7" />
+      <edge source="Gilderoy Lockhart" target="Fred Weasley" id="190" weight="7" />
+      <edge source="Gilderoy Lockhart" target="Arthur Weasley" id="191" weight="6" />
+      <edge source="Gilderoy Lockhart" target="Molly Weasley" id="192" weight="5" />
+      <edge source="Gilderoy Lockhart" target="Colin Creevey" id="193" weight="5" />
+      <edge source="Gilderoy Lockhart" target="Filius Flitwick" id="194" weight="4" />
+      <edge source="Gilderoy Lockhart" target="Myrtle Warren" id="195" weight="3" />
+      <edge source="Gilderoy Lockhart" target="Bandon Banshee" id="196" weight="3" />
+      <edge source="Gilderoy Lockhart" target="George Weasley" id="197" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Salazar Slytherin" id="198" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Vincent Crabbe" id="199" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Ogden" id="200" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Poppy Pomfrey" id="201" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Merlin" id="202" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Godric Gryffindor" id="203" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Fang" id="204" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Gregory Goyle" id="205" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Dean Thomas" id="206" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Argus Filch" id="207" weight="2" />
+      <edge source="Gilderoy Lockhart" target="Gladys Gudgeon" id="208" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Justin Finch-Fletchley" id="209" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Miranda Goshawk" id="210" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Percy Weasley" id="211" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Petunia Dursley" id="212" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Sorting Hat" id="213" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Terry Boot" id="214" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Tom Riddle" id="215" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Veronica Smethley" id="216" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Fawkes" id="217" weight="1" />
+      <edge source="Gilderoy Lockhart" target="Cuthbert Binns" id="218" weight="1" />
+      <edge source="Tom Riddle" target="Ginevra Weasley" id="219" weight="42" />
+      <edge source="Tom Riddle" target="Albus Dumbledore" id="220" weight="22" />
+      <edge source="Tom Riddle" target="Salazar Slytherin" id="221" weight="15" />
+      <edge source="Tom Riddle" target="Rubeus Hagrid" id="222" weight="10" />
+      <edge source="Tom Riddle" target="Fawkes" id="223" weight="7" />
+      <edge source="Tom Riddle" target="Draco Malfoy" id="224" weight="5" />
+      <edge source="Tom Riddle" target="Sorting Hat" id="225" weight="5" />
+      <edge source="Tom Riddle" target="Molly Weasley" id="226" weight="4" />
+      <edge source="Tom Riddle" target="Percy Weasley" id="227" weight="3" />
+      <edge source="Tom Riddle" target="Dobby" id="228" weight="2" />
+      <edge source="Tom Riddle" target="Armando Dippet" id="229" weight="2" />
+      <edge source="Tom Riddle" target="Godric Gryffindor" id="230" weight="2" />
+      <edge source="Tom Riddle" target="Fred Weasley" id="231" weight="1" />
+      <edge source="Tom Riddle" target="George Weasley" id="232" weight="1" />
+      <edge source="Tom Riddle" target="Filius Flitwick" id="233" weight="1" />
+      <edge source="Tom Riddle" target="Father Christmas" id="234" weight="1" />
+      <edge source="Tom Riddle" target="Arthur Weasley" id="235" weight="1" />
+      <edge source="Tom Riddle" target="Severus Snape" id="236" weight="1" />
+      <edge source="Rubeus Hagrid" target="Albus Dumbledore" id="237" weight="30" />
+      <edge source="Rubeus Hagrid" target="Lucius Malfoy" id="238" weight="15" />
+      <edge source="Rubeus Hagrid" target="Fang" id="239" weight="13" />
+      <edge source="Rubeus Hagrid" target="Molly Weasley" id="240" weight="10" />
+      <edge source="Rubeus Hagrid" target="Cornelius Fudge" id="241" weight="9" />
+      <edge source="Rubeus Hagrid" target="Draco Malfoy" id="242" weight="7" />
+      <edge source="Rubeus Hagrid" target="Severus Snape" id="243" weight="6" />
+      <edge source="Rubeus Hagrid" target="Aragog" id="244" weight="4" />
+      <edge source="Rubeus Hagrid" target="Percy Weasley" id="245" weight="4" />
+      <edge source="Rubeus Hagrid" target="Salazar Slytherin" id="246" weight="3" />
+      <edge source="Rubeus Hagrid" target="Dobby" id="247" weight="3" />
+      <edge source="Rubeus Hagrid" target="Armando Dippet" id="248" weight="3" />
+      <edge source="Rubeus Hagrid" target="Fred Weasley" id="249" weight="2" />
+      <edge source="Rubeus Hagrid" target="Blood-Sucking Bugbear" id="250" weight="2" />
+      <edge source="Rubeus Hagrid" target="Dean Thomas" id="251" weight="2" />
+      <edge source="Rubeus Hagrid" target="Mosag" id="252" weight="2" />
+      <edge source="Rubeus Hagrid" target="Oliver Wood" id="253" weight="1" />
+      <edge source="Rubeus Hagrid" target="George Weasley" id="254" weight="1" />
+      <edge source="Rubeus Hagrid" target="Fluffy" id="255" weight="1" />
+      <edge source="Rubeus Hagrid" target="Father Christmas" id="256" weight="1" />
+      <edge source="Rubeus Hagrid" target="Justin Finch-Fletchley" id="257" weight="1" />
+      <edge source="Rubeus Hagrid" target="Minerva McGonagall" id="258" weight="1" />
+      <edge source="Ginevra Weasley" target="Percy Weasley" id="259" weight="37" />
+      <edge source="Ginevra Weasley" target="Fred Weasley" id="260" weight="29" />
+      <edge source="Ginevra Weasley" target="George Weasley" id="261" weight="26" />
+      <edge source="Ginevra Weasley" target="Molly Weasley" id="262" weight="17" />
+      <edge source="Ginevra Weasley" target="Lucius Malfoy" id="263" weight="10" />
+      <edge source="Ginevra Weasley" target="Colin Creevey" id="264" weight="9" />
+      <edge source="Ginevra Weasley" target="Draco Malfoy" id="265" weight="8" />
+      <edge source="Ginevra Weasley" target="Mrs Norris" id="266" weight="6" />
+      <edge source="Ginevra Weasley" target="Godric Gryffindor" id="267" weight="4" />
+      <edge source="Ginevra Weasley" target="Fawkes" id="268" weight="3" />
+      <edge source="Ginevra Weasley" target="Myrtle Warren" id="269" weight="3" />
+      <edge source="Ginevra Weasley" target="Penelope Clearwater" id="270" weight="3" />
+      <edge source="Ginevra Weasley" target="Rowena Ravenclaw" id="271" weight="3" />
+      <edge source="Ginevra Weasley" target="Salazar Slytherin" id="272" weight="2" />
+      <edge source="Ginevra Weasley" target="Minerva McGonagall" id="273" weight="2" />
+      <edge source="Ginevra Weasley" target="Dobby" id="274" weight="2" />
+      <edge source="Ginevra Weasley" target="Albus Dumbledore" id="275" weight="2" />
+      <edge source="Ginevra Weasley" target="Arthur Weasley" id="276" weight="2" />
+      <edge source="Ginevra Weasley" target="Lee Jordan" id="277" weight="1" />
+      <edge source="Ginevra Weasley" target="Olive Hornby" id="278" weight="1" />
+      <edge source="Ginevra Weasley" target="Poppy Pomfrey" id="279" weight="1" />
+      <edge source="Ginevra Weasley" target="Sorting Hat" id="280" weight="1" />
+      <edge source="Ginevra Weasley" target="William Weasley" id="281" weight="1" />
+      <edge source="Dobby" target="Lucius Malfoy" id="282" weight="36" />
+      <edge source="Dobby" target="Vernon Dursley" id="283" weight="5" />
+      <edge source="Dobby" target="Colin Creevey" id="284" weight="2" />
+      <edge source="Dobby" target="Draco Malfoy" id="285" weight="2" />
+      <edge source="Dobby" target="Fred Weasley" id="286" weight="2" />
+      <edge source="Dobby" target="George Weasley" id="287" weight="1" />
+      <edge source="Dobby" target="Albus Dumbledore" id="288" weight="1" />
+      <edge source="Fred Weasley" target="George Weasley" id="289" weight="146" />
+      <edge source="Fred Weasley" target="Percy Weasley" id="290" weight="34" />
+      <edge source="Fred Weasley" target="Oliver Wood" id="291" weight="11" />
+      <edge source="Fred Weasley" target="Molly Weasley" id="292" weight="10" />
+      <edge source="Fred Weasley" target="Colin Creevey" id="293" weight="7" />
+      <edge source="Fred Weasley" target="Draco Malfoy" id="294" weight="4" />
+      <edge source="Fred Weasley" target="Angelina Johnson" id="295" weight="3" />
+      <edge source="Fred Weasley" target="Vernon Dursley" id="296" weight="3" />
+      <edge source="Fred Weasley" target="Marcus Flint" id="297" weight="3" />
+      <edge source="Fred Weasley" target="Godric Gryffindor" id="298" weight="3" />
+      <edge source="Fred Weasley" target="Argus Filch" id="299" weight="2" />
+      <edge source="Fred Weasley" target="Alicia Spinnet" id="300" weight="2" />
+      <edge source="Fred Weasley" target="Rolanda Hooch" id="301" weight="2" />
+      <edge source="Fred Weasley" target="Salazar Slytherin" id="302" weight="2" />
+      <edge source="Fred Weasley" target="Lee Jordan" id="303" weight="2" />
+      <edge source="Fred Weasley" target="Petunia Dursley" id="304" weight="1" />
+      <edge source="Fred Weasley" target="William Weasley" id="305" weight="1" />
+      <edge source="Fred Weasley" target="Gregory Goyle" id="306" weight="1" />
+      <edge source="Fred Weasley" target="Hermes" id="307" weight="1" />
+      <edge source="Fred Weasley" target="Lucius Malfoy" id="308" weight="1" />
+      <edge source="Fred Weasley" target="Errol" id="309" weight="1" />
+      <edge source="Fred Weasley" target="Dudley Dursley" id="310" weight="1" />
+      <edge source="Fred Weasley" target="Charles Weasley" id="311" weight="1" />
+      <edge source="Fred Weasley" target="Arthur Weasley" id="312" weight="1" />
+      <edge source="George Weasley" target="Percy Weasley" id="313" weight="27" />
+      <edge source="George Weasley" target="Oliver Wood" id="314" weight="17" />
+      <edge source="George Weasley" target="Draco Malfoy" id="315" weight="7" />
+      <edge source="George Weasley" target="Colin Creevey" id="316" weight="6" />
+      <edge source="George Weasley" target="Molly Weasley" id="317" weight="6" />
+      <edge source="George Weasley" target="Rowena Ravenclaw" id="318" weight="4" />
+      <edge source="George Weasley" target="Marcus Flint" id="319" weight="4" />
+      <edge source="George Weasley" target="William Weasley" id="320" weight="3" />
+      <edge source="George Weasley" target="Salazar Slytherin" id="321" weight="3" />
+      <edge source="George Weasley" target="Angelina Johnson" id="322" weight="3" />
+      <edge source="George Weasley" target="Godric Gryffindor" id="323" weight="2" />
+      <edge source="George Weasley" target="Vernon Dursley" id="324" weight="2" />
+      <edge source="George Weasley" target="Hedwig" id="325" weight="2" />
+      <edge source="George Weasley" target="Lee Jordan" id="326" weight="2" />
+      <edge source="George Weasley" target="Penelope Clearwater" id="327" weight="2" />
+      <edge source="George Weasley" target="Arthur Weasley" id="328" weight="2" />
+      <edge source="George Weasley" target="Adrian Pucey" id="329" weight="1" />
+      <edge source="George Weasley" target="Petunia Dursley" id="330" weight="1" />
+      <edge source="George Weasley" target="Poppy Pomfrey" id="331" weight="1" />
+      <edge source="George Weasley" target="Argus Filch" id="332" weight="1" />
+      <edge source="George Weasley" target="Alicia Spinnet" id="333" weight="1" />
+      <edge source="Draco Malfoy" target="Gregory Goyle" id="334" weight="20" />
+      <edge source="Draco Malfoy" target="Salazar Slytherin" id="335" weight="19" />
+      <edge source="Draco Malfoy" target="Percy Weasley" id="336" weight="14" />
+      <edge source="Draco Malfoy" target="Vincent Crabbe" id="337" weight="10" />
+      <edge source="Draco Malfoy" target="Severus Snape" id="338" weight="9" />
+      <edge source="Draco Malfoy" target="Father Christmas" id="339" weight="6" />
+      <edge source="Draco Malfoy" target="Godric Gryffindor" id="340" weight="4" />
+      <edge source="Draco Malfoy" target="Arthur Weasley" id="341" weight="3" />
+      <edge source="Draco Malfoy" target="Colin Creevey" id="342" weight="3" />
+      <edge source="Draco Malfoy" target="Albus Dumbledore" id="343" weight="1" />
+      <edge source="Draco Malfoy" target="Dudley Dursley" id="344" weight="1" />
+      <edge source="Draco Malfoy" target="Irma Pince" id="345" weight="1" />
+      <edge source="Draco Malfoy" target="Marcus Flint" id="346" weight="1" />
+      <edge source="Draco Malfoy" target="Minerva McGonagall" id="347" weight="1" />
+      <edge source="Draco Malfoy" target="Molly Weasley" id="348" weight="1" />
+      <edge source="Draco Malfoy" target="Mrs Norris" id="349" weight="1" />
+      <edge source="Draco Malfoy" target="Neville Longbottom" id="350" weight="1" />
+      <edge source="Draco Malfoy" target="Oliver Wood" id="351" weight="1" />
+      <edge source="Draco Malfoy" target="Peter Pettigrew" id="352" weight="1" />
+      <edge source="Draco Malfoy" target="Argus Filch" id="353" weight="1" />
+      <edge source="Albus Dumbledore" target="Lucius Malfoy" id="354" weight="35" />
+      <edge source="Albus Dumbledore" target="Minerva McGonagall" id="355" weight="17" />
+      <edge source="Albus Dumbledore" target="Mrs Norris" id="356" weight="15" />
+      <edge source="Albus Dumbledore" target="Argus Filch" id="357" weight="13" />
+      <edge source="Albus Dumbledore" target="Severus Snape" id="358" weight="11" />
+      <edge source="Albus Dumbledore" target="Cornelius Fudge" id="359" weight="8" />
+      <edge source="Albus Dumbledore" target="Sorting Hat" id="360" weight="5" />
+      <edge source="Albus Dumbledore" target="Godric Gryffindor" id="361" weight="4" />
+      <edge source="Albus Dumbledore" target="Salazar Slytherin" id="362" weight="4" />
+      <edge source="Albus Dumbledore" target="Poppy Pomfrey" id="363" weight="4" />
+      <edge source="Albus Dumbledore" target="Colin Creevey" id="364" weight="4" />
+      <edge source="Albus Dumbledore" target="Fang" id="365" weight="3" />
+      <edge source="Albus Dumbledore" target="Fawkes" id="366" weight="3" />
+      <edge source="Albus Dumbledore" target="Father Christmas" id="367" weight="2" />
+      <edge source="Albus Dumbledore" target="Arthur Weasley" id="368" weight="2" />
+      <edge source="Albus Dumbledore" target="Armando Dippet" id="369" weight="2" />
+      <edge source="Albus Dumbledore" target="Gregory Goyle" id="370" weight="1" />
+      <edge source="Albus Dumbledore" target="Justin Finch-Fletchley" id="371" weight="1" />
+      <edge source="Albus Dumbledore" target="Parvati Patil" id="372" weight="1" />
+      <edge source="Albus Dumbledore" target="Pomona Sprout" id="373" weight="1" />
+      <edge source="Albus Dumbledore" target="Vincent Crabbe" id="374" weight="1" />
+      <edge source="Severus Snape" target="Minerva McGonagall" id="375" weight="13" />
+      <edge source="Severus Snape" target="Salazar Slytherin" id="376" weight="4" />
+      <edge source="Severus Snape" target="Father Christmas" id="377" weight="3" />
+      <edge source="Severus Snape" target="Seamus Finnigan" id="378" weight="2" />
+      <edge source="Severus Snape" target="Justin Finch-Fletchley" id="379" weight="2" />
+      <edge source="Severus Snape" target="Dean Thomas" id="380" weight="2" />
+      <edge source="Severus Snape" target="Lucius Malfoy" id="381" weight="2" />
+      <edge source="Severus Snape" target="Gregory Goyle" id="382" weight="2" />
+      <edge source="Severus Snape" target="Godric Gryffindor" id="383" weight="2" />
+      <edge source="Severus Snape" target="Neville Longbottom" id="384" weight="2" />
+      <edge source="Severus Snape" target="Argus Filch" id="385" weight="2" />
+      <edge source="Severus Snape" target="Mrs Norris" id="386" weight="1" />
+      <edge source="Severus Snape" target="Pomona Sprout" id="387" weight="1" />
+      <edge source="Severus Snape" target="Filius Flitwick" id="388" weight="1" />
+      <edge source="Severus Snape" target="Marcus Flint" id="389" weight="1" />
+      <edge source="Myrtle Warren" target="Peeves" id="390" weight="10" />
+      <edge source="Myrtle Warren" target="Olive Hornby" id="391" weight="4" />
+      <edge source="Myrtle Warren" target="Argus Filch" id="392" weight="3" />
+      <edge source="Myrtle Warren" target="Gregory Goyle" id="393" weight="3" />
+      <edge source="Myrtle Warren" target="Percy Weasley" id="394" weight="2" />
+      <edge source="Salazar Slytherin" target="Oliver Wood" id="395" weight="6" />
+      <edge source="Salazar Slytherin" target="Percy Weasley" id="396" weight="5" />
+      <edge source="Salazar Slytherin" target="Sorting Hat" id="397" weight="5" />
+      <edge source="Salazar Slytherin" target="Godric Gryffindor" id="398" weight="4" />
+      <edge source="Salazar Slytherin" target="Rowena Ravenclaw" id="399" weight="4" />
+      <edge source="Salazar Slytherin" target="Lucius Malfoy" id="400" weight="3" />
+      <edge source="Salazar Slytherin" target="Minerva McGonagall" id="401" weight="3" />
+      <edge source="Salazar Slytherin" target="Helga Hufflepuff" id="402" weight="2" />
+      <edge source="Salazar Slytherin" target="Father Christmas" id="403" weight="2" />
+      <edge source="Salazar Slytherin" target="Argus Filch" id="404" weight="2" />
+      <edge source="Salazar Slytherin" target="Mrs Norris" id="405" weight="1" />
+      <edge source="Salazar Slytherin" target="Rolanda Hooch" id="406" weight="1" />
+      <edge source="Salazar Slytherin" target="Gregory Goyle" id="407" weight="1" />
+      <edge source="Salazar Slytherin" target="Fawkes" id="408" weight="1" />
+      <edge source="Salazar Slytherin" target="Filius Flitwick" id="409" weight="1" />
+      <edge source="Salazar Slytherin" target="Justin Finch-Fletchley" id="410" weight="1" />
+      <edge source="Salazar Slytherin" target="Lee Jordan" id="411" weight="1" />
+      <edge source="Salazar Slytherin" target="Dean Thomas" id="412" weight="1" />
+      <edge source="Salazar Slytherin" target="Seamus Finnigan" id="413" weight="1" />
+      <edge source="Salazar Slytherin" target="Vincent Crabbe" id="414" weight="1" />
+      <edge source="Argus Filch" target="Mrs Norris" id="415" weight="14" />
+      <edge source="Argus Filch" target="Peeves" id="416" weight="3" />
+      <edge source="Argus Filch" target="Godric Gryffindor" id="417" weight="2" />
+      <edge source="Argus Filch" target="Colin Creevey" id="418" weight="1" />
+      <edge source="Argus Filch" target="Neville Longbottom" id="419" weight="1" />
+      <edge source="Argus Filch" target="Pomona Sprout" id="420" weight="1" />
+      <edge source="Argus Filch" target="Poppy Pomfrey" id="421" weight="1" />
+      <edge source="Minerva McGonagall" target="Poppy Pomfrey" id="422" weight="7" />
+      <edge source="Minerva McGonagall" target="Peeves" id="423" weight="3" />
+      <edge source="Minerva McGonagall" target="Helga Hufflepuff" id="424" weight="2" />
+      <edge source="Minerva McGonagall" target="Neville Longbottom" id="425" weight="2" />
+      <edge source="Minerva McGonagall" target="Pomona Sprout" id="426" weight="2" />
+      <edge source="Minerva McGonagall" target="Godric Gryffindor" id="427" weight="1" />
+      <edge source="Minerva McGonagall" target="Fawkes" id="428" weight="1" />
+      <edge source="Minerva McGonagall" target="Filius Flitwick" id="429" weight="1" />
+      <edge source="Minerva McGonagall" target="Father Christmas" id="430" weight="1" />
+      <edge source="Minerva McGonagall" target="Oliver Wood" id="431" weight="1" />
+      <edge source="Minerva McGonagall" target="Cuthbert Binns" id="432" weight="1" />
+      <edge source="Minerva McGonagall" target="Colin Creevey" id="433" weight="1" />
+      <edge source="Minerva McGonagall" target="Seamus Finnigan" id="434" weight="1" />
+      <edge source="Minerva McGonagall" target="Sorting Hat" id="435" weight="1" />
+      <edge source="Minerva McGonagall" target="Vincent Crabbe" id="436" weight="1" />
+      <edge source="Vernon Dursley" target="Petunia Dursley" id="437" weight="18" />
+      <edge source="Vernon Dursley" target="Dudley Dursley" id="438" weight="6" />
+      <edge source="Vernon Dursley" target="Mason" id="439" weight="3" />
+      <edge source="Vernon Dursley" target="Hedwig" id="440" weight="2" />
+      <edge source="Vernon Dursley" target="Percy Weasley" id="441" weight="1" />
+      <edge source="Percy Weasley" target="Lee Jordan" id="442" weight="7" />
+      <edge source="Percy Weasley" target="Rowena Ravenclaw" id="443" weight="6" />
+      <edge source="Percy Weasley" target="Godric Gryffindor" id="444" weight="6" />
+      <edge source="Percy Weasley" target="Penelope Clearwater" id="445" weight="5" />
+      <edge source="Percy Weasley" target="Molly Weasley" id="446" weight="4" />
+      <edge source="Percy Weasley" target="Arthur Weasley" id="447" weight="3" />
+      <edge source="Percy Weasley" target="Charles Weasley" id="448" weight="2" />
+      <edge source="Percy Weasley" target="William Weasley" id="449" weight="2" />
+      <edge source="Percy Weasley" target="Errol" id="450" weight="2" />
+      <edge source="Percy Weasley" target="Helga Hufflepuff" id="451" weight="1" />
+      <edge source="Percy Weasley" target="Hermes" id="452" weight="1" />
+      <edge source="Percy Weasley" target="Colin Creevey" id="453" weight="1" />
+      <edge source="Percy Weasley" target="Peter Pettigrew" id="454" weight="1" />
+      <edge source="Percy Weasley" target="Petunia Dursley" id="455" weight="1" />
+      <edge source="Sorting Hat" target="Fawkes" id="456" weight="5" />
+      <edge source="Sorting Hat" target="Godric Gryffindor" id="457" weight="5" />
+      <edge source="Sorting Hat" target="Helena Ravenclaw" id="458" weight="1" />
+      <edge source="Oliver Wood" target="Marcus Flint" id="459" weight="10" />
+      <edge source="Oliver Wood" target="Godric Gryffindor" id="460" weight="7" />
+      <edge source="Oliver Wood" target="Colin Creevey" id="461" weight="6" />
+      <edge source="Oliver Wood" target="Rolanda Hooch" id="462" weight="4" />
+      <edge source="Oliver Wood" target="Alicia Spinnet" id="463" weight="3" />
+      <edge source="Oliver Wood" target="Angelina Johnson" id="464" weight="2" />
+      <edge source="Oliver Wood" target="Rowena Ravenclaw" id="465" weight="1" />
+      <edge source="Oliver Wood" target="Helga Hufflepuff" id="466" weight="1" />
+      <edge source="Oliver Wood" target="Katie Bell" id="467" weight="1" />
+      <edge source="Oliver Wood" target="Adrian Pucey" id="468" weight="1" />
+      <edge source="Lucius Malfoy" target="Cornelius Fudge" id="469" weight="4" />
+      <edge source="Lucius Malfoy" target="Millicent Bulstrode" id="470" weight="2" />
+      <edge source="Lucius Malfoy" target="Fang" id="471" weight="1" />
+      <edge source="Lucius Malfoy" target="Arthur Weasley" id="472" weight="1" />
+      <edge source="Molly Weasley" target="Arthur Weasley" id="473" weight="3" />
+      <edge source="Molly Weasley" target="Dudley Dursley" id="474" weight="1" />
+      <edge source="Molly Weasley" target="Lee Jordan" id="475" weight="1" />
+      <edge source="Godric Gryffindor" target="Helga Hufflepuff" id="476" weight="3" />
+      <edge source="Godric Gryffindor" target="Colin Creevey" id="477" weight="2" />
+      <edge source="Godric Gryffindor" target="Rowena Ravenclaw" id="478" weight="2" />
+      <edge source="Godric Gryffindor" target="Justin Finch-Fletchley" id="479" weight="1" />
+      <edge source="Godric Gryffindor" target="Neville Longbottom" id="480" weight="1" />
+      <edge source="Godric Gryffindor" target="Adrian Pucey" id="481" weight="1" />
+      <edge source="Gregory Goyle" target="Vincent Crabbe" id="482" weight="47" />
+      <edge source="Gregory Goyle" target="Father Christmas" id="483" weight="7" />
+      <edge source="Gregory Goyle" target="Millicent Bulstrode" id="484" weight="1" />
+      <edge source="Vincent Crabbe" target="Father Christmas" id="485" weight="5" />
+      <edge source="Vincent Crabbe" target="Millicent Bulstrode" id="486" weight="1" />
+      <edge source="Vincent Crabbe" target="Colin Creevey" id="487" weight="1" />
+      <edge source="Fang" target="Marcus Flint" id="488" weight="4" />
+      <edge source="Fang" target="Cornelius Fudge" id="489" weight="1" />
+      <edge source="Colin Creevey" target="Poppy Pomfrey" id="490" weight="1" />
+      <edge source="Colin Creevey" target="Justin Finch-Fletchley" id="491" weight="1" />
+      <edge source="Colin Creevey" target="Mrs Norris" id="492" weight="1" />
+      <edge source="Justin Finch-Fletchley" target="Peeves" id="493" weight="5" />
+      <edge source="Justin Finch-Fletchley" target="Neville Longbottom" id="494" weight="2" />
+      <edge source="Justin Finch-Fletchley" target="Helga Hufflepuff" id="495" weight="1" />
+      <edge source="Justin Finch-Fletchley" target="Filius Flitwick" id="496" weight="1" />
+      <edge source="Justin Finch-Fletchley" target="Pomona Sprout" id="497" weight="1" />
+      <edge source="Justin Finch-Fletchley" target="Poppy Pomfrey" id="498" weight="1" />
+      <edge source="Dudley Dursley" target="Petunia Dursley" id="499" weight="11" />
+      <edge source="Dudley Dursley" target="Mason" id="500" weight="5" />
+      <edge source="Neville Longbottom" target="Dean Thomas" id="501" weight="5" />
+      <edge source="Neville Longbottom" target="Seamus Finnigan" id="502" weight="3" />
+      <edge source="Neville Longbottom" target="Pomona Sprout" id="503" weight="1" />
+      <edge source="Neville Longbottom" target="Errol" id="504" weight="1" />
+      <edge source="Neville Longbottom" target="Lavender Brown" id="505" weight="1" />
+      <edge source="Neville Longbottom" target="Cuthbert Binns" id="506" weight="1" />
+      <edge source="Petunia Dursley" target="Mason" id="507" weight="8" />
+      <edge source="Petunia Dursley" target="Pomona Sprout" id="508" weight="1" />
+      <edge source="Poppy Pomfrey" target="Cuthbert Binns" id="509" weight="1" />
+      <edge source="Mrs Norris" target="Peeves" id="510" weight="1" />
+      <edge source="Peeves" target="Ernest Macmillan" id="511" weight="1" />
+      <edge source="Peeves" target="Helga Hufflepuff" id="512" weight="1" />
+      <edge source="Marcus Flint" target="Rolanda Hooch" id="513" weight="1" />
+      <edge source="Dean Thomas" target="Seamus Finnigan" id="514" weight="11" />
+      <edge source="Arthur Weasley" target="William Weasley" id="515" weight="1" />
+      <edge source="Seamus Finnigan" target="Millicent Bulstrode" id="516" weight="1" />
+      <edge source="Father Christmas" target="Helga Hufflepuff" id="517" weight="1" />
+      <edge source="Father Christmas" target="Millicent Bulstrode" id="518" weight="1" />
+      <edge source="Helga Hufflepuff" target="Ernest Macmillan" id="519" weight="3" />
+      <edge source="Helga Hufflepuff" target="Rowena Ravenclaw" id="520" weight="3" />
+      <edge source="Helga Hufflepuff" target="Lee Jordan" id="521" weight="1" />
+      <edge source="Penelope Clearwater" target="Rowena Ravenclaw" id="522" weight="8" />
+      <edge source="Rowena Ravenclaw" target="Lee Jordan" id="523" weight="1" />
+      <edge source="Pomona Sprout" target="Filius Flitwick" id="524" weight="1" />
+      <edge source="Filius Flitwick" target="Rolanda Hooch" id="525" weight="1" />
+      <edge source="Filius Flitwick" target="Aurora Sinistra" id="526" weight="1" />
+      <edge source="Alicia Spinnet" target="Angelina Johnson" id="527" weight="1" />
+      <edge source="Alicia Spinnet" target="Katie Bell" id="528" weight="1" />
+      <edge source="Angelina Johnson" target="Katie Bell" id="529" weight="2" />
+      <edge source="William Weasley" target="Charles Weasley" id="530" weight="3" />
+      <edge source="Ernest Macmillan" target="Fawcett" id="531" weight="1" />
+      <edge source="Demetrius Prod" target="Z. Nettles" id="532" weight="1" />
+      <edge source="Angus Fleet" target="Hetty Bayliss" id="533" weight="1" />
+    </edges>
+  </graph>
+</gexf>
