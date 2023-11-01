@@ -14,6 +14,8 @@ STOP_WORDS = [  # words to be removed from the text
     "and",
     "witch",
     "who",
+    "Senior",
+    "Junior",
 ]
 
 # Character titles with these words will not be matched

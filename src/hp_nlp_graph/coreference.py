@@ -51,6 +51,20 @@ hardcoded_options["Dumbledore"] = ["Albus Dumbledore"]
 hardcoded_options["Crabbe"] = ["Vincent Crabbe"]
 hardcoded_options["Goyle"] = ["Gregory Goyle"]
 hardcoded_options["Nott"] = ["Theodore Nott"]
+# Book 5
+hardcoded_options["Malcolm"] = ["Malcolm"]
+hardcoded_options["Tonks"] = ["Nymphadora Tonks"]
+hardcoded_options["Frank"] = ["Frank Longbottom"]
+hardcoded_options["Diggory"] = ["Cedric Diggory"]
+hardcoded_options["Trelawney"] = ["Sybill Trelawney"]
+hardcoded_options["Lestrange"] = ["Bellatrix Lestrange"]
+hardcoded_options["Snape"] = ["Severus Snape"]
+hardcoded_options["Fortescue"] = ["Dexter Fortescue"]
+hardcoded_options["Stebbins"] = ["Stebbins (Potter-era)"]
+hardcoded_options["Avery"] = ["Avery (Marauder-era)"]
+hardcoded_options["Mulciber"] = ["Mulciber (Marauder-era)"]
+hardcoded_options["Delacour"] = ["Fleur Delacour"]
+hardcoded_options["Cornelius"] = ["Cornelius Fudge"]
 
 
 def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchResult]:
@@ -78,6 +92,8 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
             resolution = ["Petunia Dursley"]
         elif (multiple_options.span == "Dursley") and ("Mr." in prefix.text):
             resolution = ["Vernon Dursley"]
+        elif (multiple_options.span == "Dursley") and ("ish" in suffix.text):
+            resolution = ["Vernon Dursley", "Petunia Dursley", "Dudley Dursley"]
         elif (multiple_options.span == "Weasley") and (
             ("Mr. and Mrs." in prefix.text) or ("Mrs. and Mr." in prefix.text)
         ):
@@ -113,6 +129,8 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
                     resolution = possible_option.string_id
 
             if not resolution:
+                if multiple_options.span == "Senior":
+                    continue
                 try:
                     ho = hardcoded_options[multiple_options.span]
                     if len(ho) == 1:
