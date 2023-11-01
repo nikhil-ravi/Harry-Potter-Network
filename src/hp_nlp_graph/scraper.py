@@ -1,12 +1,16 @@
 from dataclasses import dataclass
+import pickle
 
 import requests
 from bs4 import BeautifulSoup
+from tqdm import tqdm
+import pandas as pd
 
 BASE_URL = "https://harrypotter.fandom.com"
 CHARACTERS_LIST_URL_EXAMPLE = (
     BASE_URL + "/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(character_index)"
 )
+NUMBER_OF_BOOKS = 7
 
 
 def get_aliases(soup: BeautifulSoup) -> list[str]:
@@ -201,3 +205,57 @@ def get_characters_by_chapter(url: str = CHARACTERS_LIST_URL_EXAMPLE) -> list[Ch
             chapters.append(Chapter(chapter=chapter_idx, characters=[]))
             chapter_idx += 1
     return chapters
+
+
+class CharacterScraper:
+    def __init__(self, url: dict[int, str]) -> None:
+        self.url = url
+        self.books = None
+        self.data_frame = None
+
+    def scrape(self, books_to_scrape: list[int] = list(range(1, 8))) -> None:
+        books = {}
+        for book in tqdm(books_to_scrape):
+            characters_by_chapter = get_characters_by_chapter(self.url[book])
+            for chapter in characters_by_chapter:
+                for character in chapter.characters:
+                    character.enrich()
+            books[book] = characters_by_chapter
+        self.books = books
+        self.data_frame = self._to_dataframe()
+
+    def set_books(self, directory_path: str = "./data/processed"):
+        books = {}
+        for book in range(1, NUMBER_OF_BOOKS + 1):
+            with open(f"{directory_path}/{book}/chapter_characters.pkl", "rb") as f:
+                books[book] = pickle.load(f)
+        self.books = books
+        self.data_frame = self._to_dataframe()
+
+    @property
+    def dataframe(self) -> pd.DataFrame:
+        if not self.books:
+            raise ValueError("No books scraped yet.")
+        return self.data_frame
+
+    def _to_dataframe(self):
+        characters = []
+        for book, chapters in self.books.items():
+            for chapter in chapters:
+                for character in chapter.characters:
+                    characters.append((book * 100 + chapter.chapter, character.title))
+        return pd.DataFrame(characters, columns=["book_chapter", "character"])
+
+    def save_characters_by_chapter(
+        self,
+        directory_path: str = "./data/processed",
+        books_to_save: list[int] = list(range(1, 8)),
+    ):
+        for book, chapters in self.books.items():
+            if book not in books_to_save:
+                continue
+            with open(f"{directory_path}/{book}/chapter_characters.pkl", "wb") as f:
+                pickle.dump(chapters, f)
+
+    def save_dataframe(self, directory_path: str = "./data/processed"):
+        self.data_frame.to_csv(f"{directory_path}/characters.csv", index=False)
