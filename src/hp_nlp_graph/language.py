@@ -2,37 +2,16 @@ from dataclasses import dataclass
 from typing import Literal, get_args
 
 import spacy
+from spacy.matcher import Matcher
 import spacy_experimental
 from fastcoref import LingMessCoref, spacy_component
 from spacy.language import Language
 from spacy.tokens import Doc
 
+from .language_constants import REMOVE_WORDS, SHORT_FORMS, STOP_WORDS
 from .scraper import Character
 
 NLP_TYPES = Literal["spacy", "fastcoref"]
-
-STOP_WORDS = [
-    "of",
-    "the",
-    "at",
-    "family",
-    "keeper",
-    "wizard",
-    "fat",
-    "de",
-    "hogwarts",
-    "hotel",
-    "owner",
-    "express",
-]
-
-SHORT_FORMS = {
-    "Ronald": "ron",
-    "William": "bill",
-    "Charles": "charlie",
-    "Percy": "perce",
-    "Ginevra": "ginny",
-}
 
 
 def get_coref_resolver_nlp(
@@ -223,10 +202,17 @@ def add_entity_ruler(nlp: Language, characters: list[Character]) -> Language:
         {"label": "PERSON", "pattern": "Mr. Dursley", "id": "Mr. Dursley"},
         {"label": "PERSON", "pattern": "Mrs. Dursley", "id": "Mrs. Dursley"},
         {"label": "PERSON", "pattern": "Voldemort", "id": "Lord Voldemort"},
+        # Book 2
+        {"label": "PERSON", "pattern": "Mr. Mason", "id": "Mr. Mason"},
+        {"label": "PERSON", "pattern": "Mrs. Mason", "id": "Mrs. Mason"},
     ]
     ruler.add_patterns(patterns)
     ruler_patterns = []
     for character in characters:
+        if (
+            not set(character.title.split(" ")).isdisjoint(set(REMOVE_WORDS))
+        ) or "'" in character.title:
+            continue
         ruler_patterns.extend(get_entity_ruler_patterns(character))
     ruler.add_patterns([pattern.__dict__ for pattern in set(ruler_patterns)])
     return nlp
@@ -244,6 +230,7 @@ def get_matcher_patterns(character: Character) -> list:
     matcher_patterns = []
     # Split the character's name into parts and filter out short parts
     parts_of_name = [name for name in character.title.split(" ") if len(name) > 2]
+
     # Add the whole name pattern
     matcher_patterns.append(
         [
@@ -251,35 +238,33 @@ def get_matcher_patterns(character: Character) -> list:
             for part_of_name in parts_of_name
         ]
     )
+    for part_of_name in parts_of_name:
+        if part_of_name.lower() in STOP_WORDS:
+            continue
 
-    if not "'" in character.title:  # Skip names like "Hagrid's wife"
-        for part_of_name in parts_of_name:
-            if part_of_name.lower() in STOP_WORDS:
-                continue
+        # Add patterns for names without stopwords
+        matcher_patterns.append(
+            [
+                {"LOWER": part_of_name.lower(), "IS_TITLE": True},
+            ]
+        )
 
-            # Add patterns for names without stopwords
+        # Define short forms for some names
+        if part_of_name in SHORT_FORMS:
+            short_form = SHORT_FORMS[part_of_name]
             matcher_patterns.append(
                 [
-                    {"LOWER": part_of_name.lower(), "IS_TITLE": True},
+                    {"LOWER": short_form.lower(), "IS_TITLE": True},
                 ]
             )
 
-            # Define short forms for some names
-            if part_of_name in SHORT_FORMS:
-                short_form = SHORT_FORMS[part_of_name]
-                matcher_patterns.append(
-                    [
-                        {"LOWER": short_form.lower(), "IS_TITLE": True},
-                    ]
-                )
-
-            # Add patterns for names starting with "Mc" or "Mac"
-            if part_of_name.startswith("Mc") or part_of_name.startswith("Mac"):
-                matcher_patterns.append(
-                    [
-                        {"ORTH": part_of_name},
-                    ]
-                )
+        # Add patterns for names starting with "Mc" or "Mac"
+        if part_of_name.startswith("Mc") or part_of_name.startswith("Mac"):
+            matcher_patterns.append(
+                [
+                    {"ORTH": part_of_name},
+                ]
+            )
 
     # Add specific patterns for the character "Tom Riddle"
     if character.title == "Tom Riddle":
@@ -319,3 +304,28 @@ def get_matcher_patterns(character: Character) -> list:
             ]
         )
     return matcher_patterns
+
+
+def get_matcher(nlp: Language, chapter_characters: list[Character]) -> Matcher:
+    """Get matcher object for the given characters.
+
+    Args:
+        nlp (Language): Spacy NLP object
+        chapter_characters (list[Character]): List of characters to get matcher for
+
+    Returns:
+        Matcher: Spacy matcher object
+    """
+    matcher = Matcher(nlp.vocab)
+
+    # Prepare character matcher
+    for character in chapter_characters:
+        if set(character.title.split(" ")).isdisjoint(set(REMOVE_WORDS)) and (
+            "'" not in character.title
+        ):
+            matcher_pattern = get_matcher_patterns(character)
+            if len(matcher_pattern) == 0:
+                continue
+            matcher.add(character.title, matcher_pattern)
+
+    return matcher

@@ -4,10 +4,9 @@ from collections import Counter
 from dataclasses import dataclass
 
 from spacy.language import Language
-from spacy.matcher import Matcher
 from spacy.tokens import Doc
 
-from .language import get_matcher_patterns
+from .language import get_matcher
 from .scraper import Character
 
 
@@ -30,9 +29,14 @@ class MatchResult:
 
 
 hardcoded_options = dict()
-# hardcoded_options["Malfoy"] = ["Draco Malfoy"]
+hardcoded_options["Malfoy"] = ["Draco Malfoy"]
 hardcoded_options["Patil"] = ["Padma Patil", "Parvati Patil"]
 hardcoded_options["Tom"] = ["Tom"]
+hardcoded_options["Ravenclaw"] = ["Rowena Ravenclaw"]
+hardcoded_options["Hufflepuff"] = ["Helga Hufflepuff"]
+hardcoded_options["Slytherin"] = ["Salazar Slytherin"]
+hardcoded_options["Gryffindor"] = ["Godric Gryffindor"]
+hardcoded_options["Riddle"] = ["Tom Riddle"]
 
 
 def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchResult]:
@@ -59,8 +63,20 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
             resolution = ["Petunia Dursley"]
         elif (multiple_options.span == "Dursley") and ("Mr." in prefix.text):
             resolution = ["Vernon Dursley"]
+        elif (multiple_options.span == "Weasley") and (
+            ("Mr. and Mrs." in prefix.text) or ("Mrs. and Mr." in prefix.text)
+        ):
+            resolution = ["Arthur Weasley", "Molly Weasley"]
         elif (multiple_options.span == "Weasley") and ("Mrs." in prefix.text):
             resolution = ["Molly Weasley"]
+        elif (multiple_options.span == "Malfoy") and ("Mrs." in prefix.text):
+            resolution = ["Narcissa Malfoy"]
+        elif (multiple_options.span == "Malfoy") and ("Mr." in prefix.text):
+            resolution = ["Lucius Malfoy"]
+        elif (multiple_options.span == "Malfoy") and (
+            not ("Mr." in prefix.text) or ("Mrs." in prefix.text)
+        ):
+            resolution = ["Draco Malfoy"]
         # Find nearest entity
         else:
             end_char = multiple_options.end
@@ -93,31 +109,11 @@ def handle_multiple_options(results: list[MatchResult], doc: Doc) -> list[MatchR
     return results
 
 
-def get_matcher(nlp: Language, chapter_characters: list[Character]) -> Matcher:
-    """Get matcher object for the given characters.
-
-    Args:
-        nlp (Language): Spacy NLP object
-        chapter_characters (list[Character]): List of characters to get matcher for
-
-    Returns:
-        Matcher: Spacy matcher object
-    """
-    matcher = Matcher(nlp.vocab)
-
-    # Prepare character matcher
-    for character in chapter_characters:
-        matcher_pattern = get_matcher_patterns(character)
-        matcher.add(character.title, matcher_pattern)
-
-    return matcher
-
-
 def coref_resolve_and_get_characters_matches_in_chapter(
     base_nlp: Language,
     nlp: Language,
     chapter_text: str,
-    chapter_characters: list[Character],
+    characters_seen_till_this_chapter: list[Character],
     coref_resolver: callable,
 ) -> tuple[list[MatchResult], Doc]:
     """Resolve coreferences and get matches for the given characters in the chapter.
@@ -132,7 +128,7 @@ def coref_resolve_and_get_characters_matches_in_chapter(
     Returns:
         tuple[list[MatchResult], Doc]: The list of match results and the resolved doc
     """
-    matcher = get_matcher(nlp, chapter_characters)
+    matcher = get_matcher(nlp, characters_seen_till_this_chapter)
 
     # Prepare text
     lines = chapter_text.split("\n")[1:]
