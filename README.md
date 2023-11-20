@@ -1,6 +1,6 @@
 # Harry Potter Character Interaction Network
 
-![Harry Potter](./screenshots/network.jpeg)
+![Harry Potter](./screenshots/network.png)
 
 ## Overview
 
